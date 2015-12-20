@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B900D711C273B1F003EB582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D701C273B1F003EB582 /* AppDelegate.swift */; };
+		5B900D731C273B1F003EB582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D721C273B1F003EB582 /* ViewController.swift */; };
+		5B900D761C273B1F003EB582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B900D741C273B1F003EB582 /* Main.storyboard */; };
+		5B900D781C273B1F003EB582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B900D771C273B1F003EB582 /* Assets.xcassets */; };
+		5B900D7B1C273B1F003EB582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B900D791C273B1F003EB582 /* LaunchScreen.storyboard */; };
+		5B900D861C273B1F003EB582 /* PlutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D851C273B1F003EB582 /* PlutoTests.swift */; };
+		5B900D911C273B1F003EB582 /* PlutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D901C273B1F003EB582 /* PlutoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B900D821C273B1F003EB582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B900D651C273B1F003EB582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B900D6C1C273B1F003EB582;
+			remoteInfo = Pluto;
+		};
+		5B900D8D1C273B1F003EB582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B900D651C273B1F003EB582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B900D6C1C273B1F003EB582;
+			remoteInfo = Pluto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B900D6D1C273B1F003EB582 /* Pluto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pluto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B900D701C273B1F003EB582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B900D721C273B1F003EB582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B900D751C273B1F003EB582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B900D771C273B1F003EB582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B900D7A1C273B1F003EB582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B900D7C1C273B1F003EB582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B900D811C273B1F003EB582 /* PlutoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlutoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B900D851C273B1F003EB582 /* PlutoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlutoTests.swift; sourceTree = "<group>"; };
+		5B900D871C273B1F003EB582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B900D8C1C273B1F003EB582 /* PlutoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlutoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B900D901C273B1F003EB582 /* PlutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlutoUITests.swift; sourceTree = "<group>"; };
+		5B900D921C273B1F003EB582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B900D6A1C273B1F003EB582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B900D7E1C273B1F003EB582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B900D891C273B1F003EB582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B900D641C273B1F003EB582 = {
+			isa = PBXGroup;
+			children = (
+				5B900D6F1C273B1F003EB582 /* Pluto */,
+				5B900D841C273B1F003EB582 /* PlutoTests */,
+				5B900D8F1C273B1F003EB582 /* PlutoUITests */,
+				5B900D6E1C273B1F003EB582 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B900D6E1C273B1F003EB582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B900D6D1C273B1F003EB582 /* Pluto.app */,
+				5B900D811C273B1F003EB582 /* PlutoTests.xctest */,
+				5B900D8C1C273B1F003EB582 /* PlutoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B900D6F1C273B1F003EB582 /* Pluto */ = {
+			isa = PBXGroup;
+			children = (
+				5B900D701C273B1F003EB582 /* AppDelegate.swift */,
+				5B900D721C273B1F003EB582 /* ViewController.swift */,
+				5B900D741C273B1F003EB582 /* Main.storyboard */,
+				5B900D771C273B1F003EB582 /* Assets.xcassets */,
+				5B900D791C273B1F003EB582 /* LaunchScreen.storyboard */,
+				5B900D7C1C273B1F003EB582 /* Info.plist */,
+			);
+			path = Pluto;
+			sourceTree = "<group>";
+		};
+		5B900D841C273B1F003EB582 /* PlutoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B900D851C273B1F003EB582 /* PlutoTests.swift */,
+				5B900D871C273B1F003EB582 /* Info.plist */,
+			);
+			path = PlutoTests;
+			sourceTree = "<group>";
+		};
+		5B900D8F1C273B1F003EB582 /* PlutoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B900D901C273B1F003EB582 /* PlutoUITests.swift */,
+				5B900D921C273B1F003EB582 /* Info.plist */,
+			);
+			path = PlutoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B900D6C1C273B1F003EB582 /* Pluto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B900D951C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Pluto" */;
+			buildPhases = (
+				5B900D691C273B1F003EB582 /* Sources */,
+				5B900D6A1C273B1F003EB582 /* Frameworks */,
+				5B900D6B1C273B1F003EB582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pluto;
+			productName = Pluto;
+			productReference = 5B900D6D1C273B1F003EB582 /* Pluto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B900D801C273B1F003EB582 /* PlutoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B900D981C273B1F003EB582 /* Build configuration list for PBXNativeTarget "PlutoTests" */;
+			buildPhases = (
+				5B900D7D1C273B1F003EB582 /* Sources */,
+				5B900D7E1C273B1F003EB582 /* Frameworks */,
+				5B900D7F1C273B1F003EB582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B900D831C273B1F003EB582 /* PBXTargetDependency */,
+			);
+			name = PlutoTests;
+			productName = PlutoTests;
+			productReference = 5B900D811C273B1F003EB582 /* PlutoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B900D8B1C273B1F003EB582 /* PlutoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B900D9B1C273B1F003EB582 /* Build configuration list for PBXNativeTarget "PlutoUITests" */;
+			buildPhases = (
+				5B900D881C273B1F003EB582 /* Sources */,
+				5B900D891C273B1F003EB582 /* Frameworks */,
+				5B900D8A1C273B1F003EB582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B900D8E1C273B1F003EB582 /* PBXTargetDependency */,
+			);
+			name = PlutoUITests;
+			productName = PlutoUITests;
+			productReference = 5B900D8C1C273B1F003EB582 /* PlutoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B900D651C273B1F003EB582 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "John Tunisi";
+				TargetAttributes = {
+					5B900D6C1C273B1F003EB582 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = S9K7ZK32R7;
+					};
+					5B900D801C273B1F003EB582 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = S9K7ZK32R7;
+						TestTargetID = 5B900D6C1C273B1F003EB582;
+					};
+					5B900D8B1C273B1F003EB582 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = S9K7ZK32R7;
+						TestTargetID = 5B900D6C1C273B1F003EB582;
+					};
+				};
+			};
+			buildConfigurationList = 5B900D681C273B1F003EB582 /* Build configuration list for PBXProject "Pluto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B900D641C273B1F003EB582;
+			productRefGroup = 5B900D6E1C273B1F003EB582 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B900D6C1C273B1F003EB582 /* Pluto */,
+				5B900D801C273B1F003EB582 /* PlutoTests */,
+				5B900D8B1C273B1F003EB582 /* PlutoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B900D6B1C273B1F003EB582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B900D7B1C273B1F003EB582 /* LaunchScreen.storyboard in Resources */,
+				5B900D781C273B1F003EB582 /* Assets.xcassets in Resources */,
+				5B900D761C273B1F003EB582 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B900D7F1C273B1F003EB582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B900D8A1C273B1F003EB582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B900D691C273B1F003EB582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B900D731C273B1F003EB582 /* ViewController.swift in Sources */,
+				5B900D711C273B1F003EB582 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B900D7D1C273B1F003EB582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B900D861C273B1F003EB582 /* PlutoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B900D881C273B1F003EB582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B900D911C273B1F003EB582 /* PlutoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B900D831C273B1F003EB582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B900D6C1C273B1F003EB582 /* Pluto */;
+			targetProxy = 5B900D821C273B1F003EB582 /* PBXContainerItemProxy */;
+		};
+		5B900D8E1C273B1F003EB582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B900D6C1C273B1F003EB582 /* Pluto */;
+			targetProxy = 5B900D8D1C273B1F003EB582 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B900D741C273B1F003EB582 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B900D751C273B1F003EB582 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B900D791C273B1F003EB582 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B900D7A1C273B1F003EB582 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B900D931C273B1F003EB582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B900D941C273B1F003EB582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B900D961C273B1F003EB582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pluto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.Pluto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5B900D971C273B1F003EB582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pluto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.Pluto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5B900D991C273B1F003EB582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PlutoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.PlutoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pluto.app/Pluto";
+			};
+			name = Debug;
+		};
+		5B900D9A1C273B1F003EB582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PlutoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.PlutoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pluto.app/Pluto";
+			};
+			name = Release;
+		};
+		5B900D9C1C273B1F003EB582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PlutoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.PlutoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Pluto;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5B900D9D1C273B1F003EB582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PlutoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.PlutoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Pluto;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B900D681C273B1F003EB582 /* Build configuration list for PBXProject "Pluto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B900D931C273B1F003EB582 /* Debug */,
+				5B900D941C273B1F003EB582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B900D951C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Pluto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B900D961C273B1F003EB582 /* Debug */,
+				5B900D971C273B1F003EB582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B900D981C273B1F003EB582 /* Build configuration list for PBXNativeTarget "PlutoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B900D991C273B1F003EB582 /* Debug */,
+				5B900D9A1C273B1F003EB582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B900D9B1C273B1F003EB582 /* Build configuration list for PBXNativeTarget "PlutoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B900D9C1C273B1F003EB582 /* Debug */,
+				5B900D9D1C273B1F003EB582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B900D651C273B1F003EB582 /* Project object */;
+}
