@@ -21,6 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("7HuD1eDOhb90VHaB8eyJRNIkvekQrp1QYYdfhvej", clientKey: "txJ3RnpFWF9tfiQ9JJ9ppbMRV4lqEpRvlRph5e9Y")
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+                
+        if PFUser.currentUser() != nil {
+            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        } else {
+            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LoginNavigationController")
+        }
+        
         
         return true
     }
@@ -40,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {
