@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2100088D31407537E1A65B92 /* Pods_Pluto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF763C933929A81A4EAE6C5 /* Pods_Pluto.framework */; };
+		5B0FE5C01C571CDF00872AFA /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */; };
+		5B0FE5C21C571DCB00872AFA /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE5C11C571DCB00872AFA /* Place.swift */; };
+		5B0FE5C41C5721EE00872AFA /* GameDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */; };
 		5B5F607A1C456CAF008E85A0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F60791C456CAF008E85A0 /* UIViewControllerExtension.swift */; };
 		5B5F60801C457705008E85A0 /* AlertControllerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F607F1C457705008E85A0 /* AlertControllerFunctions.swift */; };
 		5B5F60821C49C0EE008E85A0 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F60811C49C0EE008E85A0 /* SignupViewController.swift */; };
@@ -22,6 +25,8 @@
 		5B900D911C273B1F003EB582 /* PlutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D901C273B1F003EB582 /* PlutoUITests.swift */; };
 		5B900D9F1C273FAF003EB582 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D9E1C273FAF003EB582 /* User.swift */; };
 		5B900DA21C27480A003EB582 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900DA11C27480A003EB582 /* HomeViewController.swift */; };
+		5BB2CF411C5825D0003E5D07 /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB2CF401C5825D0003E5D07 /* PlacesModel.swift */; };
+		5BDEE7411C5727A20064405B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDEE7401C5727A20064405B /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +49,15 @@
 /* Begin PBXFileReference section */
 		0150F97F62946A589B4EF427 /* Pods-Pluto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.release.xcconfig"; sourceTree = "<group>"; };
 		4FB7BB7DE1A3A02F6A168985 /* Pods-Pluto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.debug.xcconfig"; sourceTree = "<group>"; };
+		5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		5B0FE5C11C571DCB00872AFA /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataProvider.swift; sourceTree = "<group>"; };
 		5B5F60791C456CAF008E85A0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5B5F607F1C457705008E85A0 /* AlertControllerFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerFunctions.swift; sourceTree = "<group>"; };
 		5B5F60811C49C0EE008E85A0 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		5B5F60841C49C393008E85A0 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		5B5F60861C49D160008E85A0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5B5F608D1C56E96A008E85A0 /* Pluto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pluto-Bridging-Header.h"; sourceTree = "<group>"; };
 		5B900D6D1C273B1F003EB582 /* Pluto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pluto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B900D701C273B1F003EB582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B900D721C273B1F003EB582 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +73,8 @@
 		5B900D921C273B1F003EB582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B900D9E1C273FAF003EB582 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B900DA11C27480A003EB582 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5BB2CF401C5825D0003E5D07 /* PlacesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
+		5BDEE7401C5727A20064405B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		CCF763C933929A81A4EAE6C5 /* Pods_Pluto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pluto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,6 +157,11 @@
 			children = (
 				5B900D741C273B1F003EB582 /* Main.storyboard */,
 				5B900D701C273B1F003EB582 /* AppDelegate.swift */,
+				5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */,
+				5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */,
+				5BB2CF401C5825D0003E5D07 /* PlacesModel.swift */,
+				5BDEE7401C5727A20064405B /* Game.swift */,
+				5B0FE5C11C571DCB00872AFA /* Place.swift */,
 				5B5F60831C49C2D5008E85A0 /* Login */,
 				5B5F60881C49D164008E85A0 /* Settings */,
 				5B900DA11C27480A003EB582 /* HomeViewController.swift */,
@@ -155,6 +171,7 @@
 				5B900D791C273B1F003EB582 /* LaunchScreen.storyboard */,
 				5B900D7C1C273B1F003EB582 /* Info.plist */,
 				5B900DA01C274047003EB582 /* PFClassSubclass */,
+				5B5F608D1C56E96A008E85A0 /* Pluto-Bridging-Header.h */,
 			);
 			path = Pluto;
 			sourceTree = "<group>";
@@ -259,7 +276,7 @@
 		5B900D651C273B1F003EB582 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "John Tunisi";
 				TargetAttributes = {
@@ -381,10 +398,15 @@
 			files = (
 				5B900D731C273B1F003EB582 /* LoginViewController.swift in Sources */,
 				5B5F60821C49C0EE008E85A0 /* SignupViewController.swift in Sources */,
+				5B0FE5C21C571DCB00872AFA /* Place.swift in Sources */,
+				5BDEE7411C5727A20064405B /* Game.swift in Sources */,
 				5B900D711C273B1F003EB582 /* AppDelegate.swift in Sources */,
 				5B5F60851C49C393008E85A0 /* ResetPasswordViewController.swift in Sources */,
+				5BB2CF411C5825D0003E5D07 /* PlacesModel.swift in Sources */,
 				5B5F607A1C456CAF008E85A0 /* UIViewControllerExtension.swift in Sources */,
+				5B0FE5C01C571CDF00872AFA /* PlaceMarker.swift in Sources */,
 				5B900D9F1C273FAF003EB582 /* User.swift in Sources */,
+				5B0FE5C41C5721EE00872AFA /* GameDataProvider.swift in Sources */,
 				5B900DA21C27480A003EB582 /* HomeViewController.swift in Sources */,
 				5B5F60801C457705008E85A0 /* AlertControllerFunctions.swift in Sources */,
 				5B5F60871C49D160008E85A0 /* SettingsViewController.swift in Sources */,
@@ -528,11 +550,14 @@
 			baseConfigurationReference = 4FB7BB7DE1A3A02F6A168985 /* Pods-Pluto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Pluto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.Pluto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pluto/Pluto-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -541,11 +566,13 @@
 			baseConfigurationReference = 0150F97F62946A589B4EF427 /* Pods-Pluto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Pluto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.Pluto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pluto/Pluto-Bridging-Header.h";
 			};
 			name = Release;
 		};

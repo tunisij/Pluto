@@ -8,6 +8,7 @@ target 'Pluto' do
     pod 'FBSDKLoginKit'
     pod 'FBSDKShareKit'
     pod 'ParseFacebookUtilsV4'
+    pod 'GoogleMaps'
 end
 
 target 'Pluto' do

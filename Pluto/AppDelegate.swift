@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import ParseFacebookUtilsV4
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("7HuD1eDOhb90VHaB8eyJRNIkvekQrp1QYYdfhvej", clientKey: "txJ3RnpFWF9tfiQ9JJ9ppbMRV4lqEpRvlRph5e9Y")
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
-                
+        GMSServices.provideAPIKey("AIzaSyCZqP5YCJrSLGipSU96OpfXeRtQXpgYcm8")
+        
         if PFUser.currentUser() != nil {
             self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         } else {

@@ -65,7 +65,13 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func signupButtonClicked(sender: AnyObject) {
-        if validateEmailAddress(emailAddressTextField.text!) && validateUsername(usernameTextField.text!) && validatePassword(passwordTextField.text!) {
+        if !validateEmailAddress(emailAddressTextField.text!) {
+            displayOkAlert("Invalid", message: "Invalid email address.", sender: self)
+        } else if !validateUsername(usernameTextField.text!) {
+            displayOkAlert("Invalid", message: "Username must be at least 5 characters.", sender: self)
+        } else if !validatePassword(passwordTextField.text!) {
+            displayOkAlert("Invalid", message: "Password must be at least 8 characters and contain at least one capital letter and one number.", sender: self)
+        } else {
             let newUser = PFUser()
             newUser.username = usernameTextField.text
             newUser.password = passwordTextField.text

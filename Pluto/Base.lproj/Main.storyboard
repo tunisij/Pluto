@@ -93,9 +93,33 @@
                     <view key="view" contentMode="scaleToFill" id="sKG-F2-Vdi">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-qb-Ong" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="505"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6F-70-AGu">
+                                <rect key="frame" x="256" y="513" width="89" height="30"/>
+                                <state key="normal" title="Post A Game"/>
+                                <connections>
+                                    <action selector="postAGameButtonClicked:" destination="ccG-cQ-lsY" eventType="touchUpInside" id="jwj-VW-50x"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k6F-70-AGu" firstAttribute="top" secondItem="1B6-qb-Ong" secondAttribute="bottom" constant="8" symbolic="YES" id="8a1-lp-D4l"/>
+                            <constraint firstItem="DZg-WL-GOp" firstAttribute="top" secondItem="k6F-70-AGu" secondAttribute="bottom" constant="8" symbolic="YES" id="B54-1s-eE1"/>
+                            <constraint firstItem="k6F-70-AGu" firstAttribute="centerX" secondItem="1B6-qb-Ong" secondAttribute="centerX" id="Ddj-jm-TAj"/>
+                            <constraint firstItem="1B6-qb-Ong" firstAttribute="top" secondItem="sKG-F2-Vdi" secondAttribute="top" id="qhX-SO-ZQ8"/>
+                            <constraint firstItem="1B6-qb-Ong" firstAttribute="leading" secondItem="sKG-F2-Vdi" secondAttribute="leading" id="uHi-hc-BGH"/>
+                            <constraint firstAttribute="trailing" secondItem="1B6-qb-Ong" secondAttribute="trailing" id="ujP-7k-dpA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="9SX-jS-cww"/>
+                    <connections>
+                        <outlet property="mapView" destination="1B6-qb-Ong" id="Vdn-tR-zf9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpC-cb-pUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

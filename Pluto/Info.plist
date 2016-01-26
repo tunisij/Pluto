@@ -36,52 +36,59 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb1675604589375446</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>1675604589375446</string>
-    <key>FacebookDisplayName</key>
-    <string>Pluto</string>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSExceptionDomains</key>
-        <dict>
-            <key>facebook.com</key>
-            <dict>
-                <key>NSIncludesSubdomains</key>
-                <true/>
-                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
-                <false/>
-            </dict>
-            <key>fbcdn.net</key>
-            <dict>
-                <key>NSIncludesSubdomains</key>
-                <true/>
-                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
-                <false/>
-            </dict>
-            <key>akamaihd.net</key>
-            <dict>
-                <key>NSIncludesSubdomains</key>
-                <true/>
-                <key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
-                <false/>
-            </dict>
-        </dict>
-    </dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1675604589375446</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>1675604589375446</string>
+	<key>FacebookDisplayName</key>
+	<string>Pluto</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>facebook.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>fbcdn.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>akamaihd.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is used to find nearby games to join</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
     <key>LSApplicationQueriesSchemes</key>
     <array>
-        <string>fbapi</string>
-        <string>fb-messenger-api</string>
-        <string>fbauth2</string>
-        <string>fbshareextension</string>
+        <string>googlechromes</string>
+        <string>comgooglemaps</string>
     </array>
 </dict>
 </plist>
