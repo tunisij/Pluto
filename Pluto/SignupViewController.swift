@@ -17,6 +17,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.tabBar.hidden = true
         
         emailAddressTextField.delegate = self
         usernameTextField.delegate = self
@@ -28,14 +29,6 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        self.navigationItem.title = "Sign up"
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        self.navigationItem.title = nil
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

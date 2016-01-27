@@ -15,19 +15,12 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.tabBar.hidden = true
         
         emailAddressTextField.delegate = self
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        self.navigationItem.title = "Reset Password"
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        self.navigationItem.title = nil
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

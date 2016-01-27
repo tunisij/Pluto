@@ -24,11 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
         GMSServices.provideAPIKey("AIzaSyCZqP5YCJrSLGipSU96OpfXeRtQXpgYcm8")
         
-        if PFUser.currentUser() != nil {
-            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-        } else {
-            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LoginNavigationController")
-        }
+        self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        
+//        if PFUser.currentUser() != nil {
+//            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+//        } else {
+//            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LoginNavigationController")
+//        }
         
         
         return true

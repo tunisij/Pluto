@@ -27,8 +27,9 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-        dataProvider.findAllGames() { (games) in
+//            self.parentViewController!.title = "Pluto"
+        
+            dataProvider.findAllGames() { (games) in
             let places = self.placesModel.createPlaces(games)
             
             self.mapView.clear()
@@ -58,5 +59,8 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
+    @IBAction func createATeamButtonClicked(sender: AnyObject) {
+        
+    }
     
 }
