@@ -8,11 +8,13 @@
 
 class Game {
     
-    let sport: String
-    let startTime: NSDate
-    let coordinates: CLLocationCoordinate2D
+    var identifier: Int
+    var sport: String
+    var startTime: NSDate
+    var coordinates: CLLocationCoordinate2D
     
-    init(sport: String, startTime: NSDate, coordinates: CLLocationCoordinate2D) {
+    init(identifier: Int, sport: String, startTime: NSDate, coordinates: CLLocationCoordinate2D) {
+        self.identifier = identifier
         self.sport = sport
         self.startTime = startTime
         self.coordinates = coordinates

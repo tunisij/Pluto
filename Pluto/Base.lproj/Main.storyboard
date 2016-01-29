@@ -348,6 +348,7 @@
                     <connections>
                         <segue destination="hMa-cd-lqF" kind="relationship" relationship="viewControllers" id="eCh-Fx-Umc"/>
                         <segue destination="epf-5O-6Sm" kind="relationship" relationship="viewControllers" id="zTY-T0-gLA"/>
+                        <segue destination="Wjv-BP-GJh" kind="relationship" relationship="viewControllers" id="0c6-3y-MYK"/>
                         <segue destination="5hv-vp-jgS" kind="relationship" relationship="viewControllers" id="0YB-oA-nbs"/>
                     </connections>
                 </tabBarController>
@@ -443,6 +444,58 @@
             </objects>
             <point key="canvasLocation" x="1918" y="1162"/>
         </scene>
+        <!--Squads-->
+        <scene sceneID="CBb-N2-mPO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wjv-BP-GJh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Squads" image="Squads" selectedImage="Squads-Filled" id="hfc-mL-Mmy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nh6-bA-OCK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.40118148770000001" green="0.17926803690000001" blue="0.65399538589999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GvA-1K-VrP" kind="relationship" relationship="rootViewController" id="TQG-pX-2Xe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDq-TZ-xz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2684" y="-315"/>
+        </scene>
+        <!--Squads-->
+        <scene sceneID="QrB-Nk-5TX">
+            <objects>
+                <tableViewController storyboardIdentifier="SquadsTableViewController" title="Squads" id="GvA-1K-VrP" customClass="SquadsTableViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iuq-9K-6i5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MPv-yx-fcA">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MPv-yx-fcA" id="efT-bU-gN7">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GvA-1K-VrP" id="mWk-qs-NaX"/>
+                            <outlet property="delegate" destination="GvA-1K-VrP" id="aMF-1M-00T"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Squads" id="m0e-ft-tuY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEH-gZ-VRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3442" y="-315"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Home" width="30" height="30"/>
@@ -451,5 +504,7 @@
         <image name="Profile-Male-Filled" width="30" height="30"/>
         <image name="Settings" width="30" height="30"/>
         <image name="Settings-Filled" width="30" height="30"/>
+        <image name="Squads" width="30" height="30"/>
+        <image name="Squads-Filled" width="30" height="30"/>
     </resources>
 </document>
