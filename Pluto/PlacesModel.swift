@@ -14,7 +14,7 @@ class PlacesModel {
     func createPlaces(games: Games) -> Places {
         var places = Places()
         for game in games {
-            places.append(Place(sport: game.sport, coordinates: game.coordinates))
+            places.append(Place(sport: game.sport, coordinates: game.coordinates, image: UIImage()))
         }
         return places
     }

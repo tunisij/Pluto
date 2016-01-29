@@ -10,11 +10,13 @@
 class Place {
     
     var coordinates: CLLocationCoordinate2D
-    var sport: String
+    var sport: Sport
+    var image: UIImage
     
-    init(sport: String, coordinates: CLLocationCoordinate2D) {
+    init(sport: Sport, coordinates: CLLocationCoordinate2D, image: UIImage) {
         self.coordinates = coordinates
         self.sport = sport
+        self.image = image
     }
     
 }

@@ -20,9 +20,12 @@ class GameDataProvider {
                 if let objects = objects {
                     for gameObject in objects {
                         let identifier = gameObject["identifier"] as! Int
-                        let sport = gameObject["sport"] as! String
+                        let sportName = gameObject["sport"] as! String
                         let startTime = gameObject["startTime"] as! NSDate
                         let pfGeoPoint = gameObject["gameLocation"] as! PFGeoPoint
+                        
+                        //Take actual sport identifier when I switch BaaS
+                        let sport = Sport(identifier: identifier, name: sportName)
                         let coordinates = CLLocationCoordinate2D(latitude: pfGeoPoint.latitude, longitude: pfGeoPoint.longitude)
                         games.append(Game(identifier: identifier, sport: sport, startTime: startTime, coordinates: coordinates))
                     }

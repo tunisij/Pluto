@@ -11,11 +11,20 @@
 		5B0FE5C01C571CDF00872AFA /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */; };
 		5B0FE5C21C571DCB00872AFA /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE5C11C571DCB00872AFA /* Place.swift */; };
 		5B0FE5C41C5721EE00872AFA /* GameDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */; };
+		5B2185A91C585B78009D4A25 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185A81C585B78009D4A25 /* SettingsTableViewController.swift */; };
+		5B2185AB1C58613B009D4A25 /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185AA1C58613B009D4A25 /* LegalViewController.swift */; };
+		5B2185B11C5BE960009D4A25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B01C5BE960009D4A25 /* ProfileViewController.swift */; };
+		5B2185B41C5BEC5B009D4A25 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B31C5BEC5B009D4A25 /* Profile.swift */; };
+		5B2185B61C5BEF46009D4A25 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B51C5BEF46009D4A25 /* Sport.swift */; };
+		5B2185B81C5BFB22009D4A25 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B71C5BFB22009D4A25 /* Team.swift */; };
+		5B2185BA1C5BFB2D009D4A25 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B91C5BFB2D009D4A25 /* Group.swift */; };
+		5B5E51971C5C018E00E21FB3 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E51961C5C018E00E21FB3 /* Record.swift */; };
+		5B5E519B1C5C06CB00E21FB3 /* SquadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E519A1C5C06CB00E21FB3 /* SquadsTableViewController.swift */; };
+		5B5E519F1C5C0EC700E21FB3 /* UserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E519E1C5C0EC700E21FB3 /* UserActions.swift */; };
 		5B5F607A1C456CAF008E85A0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F60791C456CAF008E85A0 /* UIViewControllerExtension.swift */; };
 		5B5F60801C457705008E85A0 /* AlertControllerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F607F1C457705008E85A0 /* AlertControllerFunctions.swift */; };
 		5B5F60821C49C0EE008E85A0 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F60811C49C0EE008E85A0 /* SignupViewController.swift */; };
 		5B5F60851C49C393008E85A0 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F60841C49C393008E85A0 /* ResetPasswordViewController.swift */; };
-		5B5F60871C49D160008E85A0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F60861C49D160008E85A0 /* SettingsViewController.swift */; };
 		5B900D711C273B1F003EB582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D701C273B1F003EB582 /* AppDelegate.swift */; };
 		5B900D731C273B1F003EB582 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D721C273B1F003EB582 /* LoginViewController.swift */; };
 		5B900D761C273B1F003EB582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B900D741C273B1F003EB582 /* Main.storyboard */; };
@@ -52,11 +61,20 @@
 		5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		5B0FE5C11C571DCB00872AFA /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataProvider.swift; sourceTree = "<group>"; };
+		5B2185A81C585B78009D4A25 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		5B2185AA1C58613B009D4A25 /* LegalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
+		5B2185B01C5BE960009D4A25 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5B2185B31C5BEC5B009D4A25 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5B2185B51C5BEF46009D4A25 /* Sport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		5B2185B71C5BFB22009D4A25 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		5B2185B91C5BFB2D009D4A25 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		5B5E51961C5C018E00E21FB3 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		5B5E519A1C5C06CB00E21FB3 /* SquadsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquadsTableViewController.swift; sourceTree = "<group>"; };
+		5B5E519E1C5C0EC700E21FB3 /* UserActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserActions.swift; sourceTree = "<group>"; };
 		5B5F60791C456CAF008E85A0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5B5F607F1C457705008E85A0 /* AlertControllerFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerFunctions.swift; sourceTree = "<group>"; };
 		5B5F60811C49C0EE008E85A0 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		5B5F60841C49C393008E85A0 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		5B5F60861C49D160008E85A0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5B5F608D1C56E96A008E85A0 /* Pluto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pluto-Bridging-Header.h"; sourceTree = "<group>"; };
 		5B900D6D1C273B1F003EB582 /* Pluto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pluto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B900D701C273B1F003EB582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +130,70 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5B2185AC1C5BE848009D4A25 /* Custom Objects */ = {
+			isa = PBXGroup;
+			children = (
+				5BDEE7401C5727A20064405B /* Game.swift */,
+				5B0FE5C11C571DCB00872AFA /* Place.swift */,
+				5B2185B31C5BEC5B009D4A25 /* Profile.swift */,
+				5B2185B51C5BEF46009D4A25 /* Sport.swift */,
+				5B2185B71C5BFB22009D4A25 /* Team.swift */,
+				5B2185B91C5BFB2D009D4A25 /* Group.swift */,
+				5B5E51961C5C018E00E21FB3 /* Record.swift */,
+			);
+			name = "Custom Objects";
+			sourceTree = "<group>";
+		};
+		5B2185AD1C5BE880009D4A25 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				5B5F607F1C457705008E85A0 /* AlertControllerFunctions.swift */,
+				5B5F60791C456CAF008E85A0 /* UIViewControllerExtension.swift */,
+				5B5E519E1C5C0EC700E21FB3 /* UserActions.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		5B2185AE1C5BE8DB009D4A25 /* Object Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BB2CF401C5825D0003E5D07 /* PlacesModel.swift */,
+			);
+			name = "Object Models";
+			sourceTree = "<group>";
+		};
+		5B2185AF1C5BE913009D4A25 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				5B900DA11C27480A003EB582 /* HomeViewController.swift */,
+			);
+			name = HomeTab;
+			sourceTree = "<group>";
+		};
+		5B2185B21C5BE964009D4A25 /* ProfileTab */ = {
+			isa = PBXGroup;
+			children = (
+				5B2185B01C5BE960009D4A25 /* ProfileViewController.swift */,
+			);
+			name = ProfileTab;
+			sourceTree = "<group>";
+		};
+		5B5E519C1C5C06D100E21FB3 /* SquadsTab */ = {
+			isa = PBXGroup;
+			children = (
+				5B5E519A1C5C06CB00E21FB3 /* SquadsTableViewController.swift */,
+			);
+			name = SquadsTab;
+			sourceTree = "<group>";
+		};
+		5B5E519D1C5C0B4E00E21FB3 /* Google Maps */ = {
+			isa = PBXGroup;
+			children = (
+				5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */,
+			);
+			name = "Google Maps";
+			sourceTree = "<group>";
+		};
 		5B5F60831C49C2D5008E85A0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +207,8 @@
 		5B5F60881C49D164008E85A0 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				5B5F60861C49D160008E85A0 /* SettingsViewController.swift */,
+				5B2185A81C585B78009D4A25 /* SettingsTableViewController.swift */,
+				5B2185AA1C58613B009D4A25 /* LegalViewController.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -157,20 +240,20 @@
 			children = (
 				5B900D741C273B1F003EB582 /* Main.storyboard */,
 				5B900D701C273B1F003EB582 /* AppDelegate.swift */,
-				5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */,
 				5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */,
-				5BB2CF401C5825D0003E5D07 /* PlacesModel.swift */,
-				5BDEE7401C5727A20064405B /* Game.swift */,
-				5B0FE5C11C571DCB00872AFA /* Place.swift */,
+				5B5E519D1C5C0B4E00E21FB3 /* Google Maps */,
+				5B2185AC1C5BE848009D4A25 /* Custom Objects */,
+				5B2185AE1C5BE8DB009D4A25 /* Object Models */,
+				5B2185AD1C5BE880009D4A25 /* Global */,
 				5B5F60831C49C2D5008E85A0 /* Login */,
 				5B5F60881C49D164008E85A0 /* Settings */,
-				5B900DA11C27480A003EB582 /* HomeViewController.swift */,
-				5B5F607F1C457705008E85A0 /* AlertControllerFunctions.swift */,
-				5B5F60791C456CAF008E85A0 /* UIViewControllerExtension.swift */,
+				5B900DA01C274047003EB582 /* PFClassSubclass */,
+				5B2185AF1C5BE913009D4A25 /* HomeTab */,
+				5B2185B21C5BE964009D4A25 /* ProfileTab */,
+				5B5E519C1C5C06D100E21FB3 /* SquadsTab */,
 				5B900D771C273B1F003EB582 /* Assets.xcassets */,
 				5B900D791C273B1F003EB582 /* LaunchScreen.storyboard */,
 				5B900D7C1C273B1F003EB582 /* Info.plist */,
-				5B900DA01C274047003EB582 /* PFClassSubclass */,
 				5B5F608D1C56E96A008E85A0 /* Pluto-Bridging-Header.h */,
 			);
 			path = Pluto;
@@ -396,20 +479,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2185B41C5BEC5B009D4A25 /* Profile.swift in Sources */,
 				5B900D731C273B1F003EB582 /* LoginViewController.swift in Sources */,
 				5B5F60821C49C0EE008E85A0 /* SignupViewController.swift in Sources */,
+				5B2185BA1C5BFB2D009D4A25 /* Group.swift in Sources */,
 				5B0FE5C21C571DCB00872AFA /* Place.swift in Sources */,
 				5BDEE7411C5727A20064405B /* Game.swift in Sources */,
 				5B900D711C273B1F003EB582 /* AppDelegate.swift in Sources */,
 				5B5F60851C49C393008E85A0 /* ResetPasswordViewController.swift in Sources */,
+				5B2185B11C5BE960009D4A25 /* ProfileViewController.swift in Sources */,
 				5BB2CF411C5825D0003E5D07 /* PlacesModel.swift in Sources */,
+				5B5E519B1C5C06CB00E21FB3 /* SquadsTableViewController.swift in Sources */,
+				5B2185AB1C58613B009D4A25 /* LegalViewController.swift in Sources */,
+				5B2185B61C5BEF46009D4A25 /* Sport.swift in Sources */,
 				5B5F607A1C456CAF008E85A0 /* UIViewControllerExtension.swift in Sources */,
+				5B5E519F1C5C0EC700E21FB3 /* UserActions.swift in Sources */,
 				5B0FE5C01C571CDF00872AFA /* PlaceMarker.swift in Sources */,
 				5B900D9F1C273FAF003EB582 /* User.swift in Sources */,
 				5B0FE5C41C5721EE00872AFA /* GameDataProvider.swift in Sources */,
+				5B5E51971C5C018E00E21FB3 /* Record.swift in Sources */,
+				5B2185A91C585B78009D4A25 /* SettingsTableViewController.swift in Sources */,
 				5B900DA21C27480A003EB582 /* HomeViewController.swift in Sources */,
+				5B2185B81C5BFB22009D4A25 /* Team.swift in Sources */,
 				5B5F60801C457705008E85A0 /* AlertControllerFunctions.swift in Sources */,
-				5B5F60871C49D160008E85A0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

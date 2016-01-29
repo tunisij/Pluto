@@ -16,7 +16,7 @@ class PlaceMarker: GMSMarker {
         super.init()
         
         position = place.coordinates
-//        icon = UIImage(named: place.placeType+"_pin")
+//        icon = UIImage(named: "Squads")
         groundAnchor = CGPoint(x: 0.5, y: 1)
     }
 }

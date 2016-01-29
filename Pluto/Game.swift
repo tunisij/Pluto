@@ -9,11 +9,11 @@
 class Game {
     
     var identifier: Int
-    var sport: String
+    var sport: Sport
     var startTime: NSDate
     var coordinates: CLLocationCoordinate2D
     
-    init(identifier: Int, sport: String, startTime: NSDate, coordinates: CLLocationCoordinate2D) {
+    init(identifier: Int, sport: Sport, startTime: NSDate, coordinates: CLLocationCoordinate2D) {
         self.identifier = identifier
         self.sport = sport
         self.startTime = startTime
