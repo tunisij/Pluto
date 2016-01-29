@@ -23,6 +23,10 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
         view.addGestureRecognizer(tap)
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        self.tabBarController?.tabBar.hidden = false
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField == emailAddressTextField {
             if validateEmailAddress(emailAddressTextField.text!) {
@@ -36,4 +40,5 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
     @IBAction func resetPasswordButtonClicked(sender: AnyObject) {
         PFUser.requestPasswordResetForEmailInBackground(emailAddressTextField.text!)
     }
+    
 }

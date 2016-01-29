@@ -9,6 +9,6 @@
 class LegalViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
-        self.title = "Legal"
+
     }
 }

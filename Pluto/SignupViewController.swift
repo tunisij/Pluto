@@ -27,6 +27,10 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         view.addGestureRecognizer(tap)
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        self.tabBarController?.tabBar.hidden = false
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -85,7 +89,5 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
             })
         }
     }
-    
-    
     
 }
