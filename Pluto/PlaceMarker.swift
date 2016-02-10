@@ -9,13 +9,15 @@
 import GoogleMaps
 
 class PlaceMarker: GMSMarker {
-    let place: Place
+    let latitude: Double!
+    let longitude: Double!
     
-    init(place: Place) {
-        self.place = place
+    init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
         super.init()
         
-        position = place.coordinates
+        position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
 //        icon = UIImage(named: "Squads")
         groundAnchor = CGPoint(x: 0.5, y: 1)
     }

@@ -7,9 +7,11 @@
 //
 
 import UIKit
-import Parse
-import ParseFacebookUtilsV4
 import GoogleMaps
+import FBSDKCoreKit
+import Firebase
+
+let FirebaseUrl = "https://edu-gvsu-pluto.firebaseio.com/"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,23 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        Parse.enableLocalDatastore()
-        Parse.setApplicationId("7HuD1eDOhb90VHaB8eyJRNIkvekQrp1QYYdfhvej", clientKey: "txJ3RnpFWF9tfiQ9JJ9ppbMRV4lqEpRvlRph5e9Y")
-        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+    func application(application: UIApplication, didFinishLaunchingWithOptions
+        
+        launchOptions: [NSObject: AnyObject]?) -> Bool {
         GMSServices.provideAPIKey("AIzaSyCZqP5YCJrSLGipSU96OpfXeRtQXpgYcm8")
         
         self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
         
-//        if PFUser.currentUser() != nil {
-//            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
-//        } else {
-//            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LoginNavigationController")
-//        }
-        
-        
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -57,7 +50,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
 
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+
+    }
 
 }
 

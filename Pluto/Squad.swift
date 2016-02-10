@@ -6,15 +6,15 @@
 //  Copyright © 2016 John Tunisi. All rights reserved.
 //
 
-class Group {
+class Squad {
     
-    var identifier: Int
+    var key: String
     var name: String
     var admins: Users
     var users: Users
     
-    init(identifier: Int, name: String, admins: Users, users: Users) {
-        self.identifier = identifier
+    init(name: String, admins: Users, users: Users, key: String = "") {
+        self.key = key
         self.name = name
         self.admins = admins
         self.users = users
@@ -22,4 +22,4 @@ class Group {
     
 }
 
-typealias Groups = [Group]
+typealias Squads = [Squad]

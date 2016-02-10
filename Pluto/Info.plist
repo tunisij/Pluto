@@ -78,17 +78,14 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location is used to find nearby games to join</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>fbapi</string>
-		<string>fb-messenger-api</string>
-		<string>fbauth2</string>
-		<string>fbshareextension</string>
-	</array>
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>googlechromes</string>
         <string>comgooglemaps</string>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
     </array>
 </dict>
 </plist>

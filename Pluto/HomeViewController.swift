@@ -15,7 +15,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     let dataProvider = GameDataProvider()
-    let placesModel = PlacesModel()
     
     var games: Games = []
     
@@ -30,12 +29,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
 //            self.parentViewController!.title = "Pluto"
         
             dataProvider.findAllGames() { (games) in
-            let places = self.placesModel.createPlaces(games)
-            
-            self.mapView.clear()
-            for placeMarker in self.placesModel.createPlaceMarkers(places) {
-                placeMarker.map = self.mapView
-            }
+//            let places = self.placesModel.createPlaces(games)
+//            
+//            self.mapView.clear()
+//            for placeMarker in self.placesModel.createPlaceMarkers(places) {
+//                placeMarker.map = self.mapView
+//            }
         }
     }
     
@@ -52,10 +51,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
             locationManager.stopUpdatingLocation()
         }
-        
-    }
-    
-    @IBAction func postAGameButtonClicked(sender: AnyObject) {
         
     }
     

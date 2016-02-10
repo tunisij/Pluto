@@ -1,25 +1,27 @@
 //
-//  User.swift
+//  Profile.swift
 //  Pluto
 //
-//  Created by John Tunisi on 12/20/15.
-//  Copyright © 2015 John Tunisi. All rights reserved.
+//  Created by John Tunisi on 1/29/16.
+//  Copyright © 2016 John Tunisi. All rights reserved.
 //
 
-import Parse
+import Firebase
 
-class User : PFObject, PFSubclassing {
+class User {
     
-    override class func initialize() {
-        struct Static {
-            static var onceToken : dispatch_once_t = 0;
-        }
-        dispatch_once(&Static.onceToken) {
-            self.registerSubclass()
-        }
+    var uid: String
+    
+    init(authData: FAuthData) {
+        self.uid = authData.uid
     }
     
-    static func parseClassName() -> String {
-        return "User"
+    func toAnyObject() -> AnyObject {
+        return [
+            "uid": uid
+        ]
     }
+    
 }
+
+typealias Users = [User]

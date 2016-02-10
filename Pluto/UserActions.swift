@@ -6,16 +6,29 @@
 //  Copyright © 2016 John Tunisi. All rights reserved.
 //
 
-import Parse
+import Firebase
+import FBSDKLoginKit
 
 func isUserLoggedIn() -> Bool {
-    return PFUser.currentUser() != nil
+    let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com")
+    if ref.authData != nil {
+        return true
+    }
+    return false
 }
 
-func logout(sender: AnyObject) {
-    PFUser.logOut()
+func getUserUid() -> String! {
+    let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com")
+    if ref.authData != nil {
+        if ref.authData.uid != nil {
+            return ref.authData.uid
+        }
+    }
+    return ""
 }
 
 func deleteAccount(sender: AnyObject) {    
-    print("Delete account needs to be implemented")
+    let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com")
+    ref.unauth()
+    FBSDKLoginManager().logOut()
 }
