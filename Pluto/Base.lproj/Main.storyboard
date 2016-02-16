@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UHI-n7-ZpV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UHI-n7-ZpV">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,10 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-qb-Ong" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="64" width="600" height="441"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mk-jX-LRX">
                                 <rect key="frame" x="479" y="513" width="101" height="30"/>
                                 <state key="normal" title="Create A Team">
@@ -40,6 +36,10 @@
                                     <segue destination="GA3-5y-yQt" kind="show" id="pSp-AA-9jh"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-qb-Ong" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="441"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.40118148770000001" green="0.17926803690000001" blue="0.65399538589999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -86,10 +86,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long press to specify game location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5J6-Tv-O60">
+                                <rect key="frame" x="46" y="263" width="281" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="Y8Y-DJ-DMR">
                                 <rect key="frame" x="20" y="101" width="560" height="87"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="Jl1-gV-xto"/>
+                                    <constraint firstAttribute="height" constant="87" id="8GM-HD-NEN"/>
                                 </constraints>
                                 <date key="date" timeIntervalSinceReferenceDate="476757296.00606197">
                                     <!--2016-02-10 00:34:56 +0000-->
@@ -107,29 +113,50 @@
                                     <action selector="submitButtonClicked:" destination="GA3-5y-yQt" eventType="touchUpInside" id="DMs-HF-sy5"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ei-e3-jYs" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="292" width="600" height="213"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TM4-yA-vln" appends="YES" id="ClG-uf-MwM"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TRz-D8-l9v" firstAttribute="top" secondItem="XJ1-U3-tq9" secondAttribute="bottom" constant="8" symbolic="YES" id="11B-UF-21S"/>
-                            <constraint firstItem="d6E-fg-p4j" firstAttribute="top" secondItem="2nV-93-WKq" secondAttribute="bottom" constant="8" symbolic="YES" id="26A-uF-J4U"/>
-                            <constraint firstItem="6AC-Ge-8zV" firstAttribute="trailing" secondItem="zwx-de-Gvw" secondAttribute="trailingMargin" id="EYI-Cr-pin"/>
-                            <constraint firstItem="Y8Y-DJ-DMR" firstAttribute="top" secondItem="TRz-D8-l9v" secondAttribute="bottom" constant="8" symbolic="YES" id="HVx-Ya-xr4"/>
-                            <constraint firstItem="6AC-Ge-8zV" firstAttribute="trailing" secondItem="2nV-93-WKq" secondAttribute="trailing" id="IDV-HP-pKs"/>
-                            <constraint firstItem="6AC-Ge-8zV" firstAttribute="leading" secondItem="Sg3-q8-Y6n" secondAttribute="leading" id="SVA-ga-DBN"/>
-                            <constraint firstItem="Y8Y-DJ-DMR" firstAttribute="leading" secondItem="Sg3-q8-Y6n" secondAttribute="leading" id="XCv-qZ-wA6"/>
-                            <constraint firstItem="TRz-D8-l9v" firstAttribute="leading" secondItem="zwx-de-Gvw" secondAttribute="leadingMargin" id="aH4-h6-vfz"/>
-                            <constraint firstItem="Sg3-q8-Y6n" firstAttribute="top" secondItem="Y8Y-DJ-DMR" secondAttribute="bottom" constant="8" symbolic="YES" id="ay7-lK-HD3"/>
-                            <constraint firstItem="Y8Y-DJ-DMR" firstAttribute="leading" secondItem="TRz-D8-l9v" secondAttribute="leading" id="pad-t5-831"/>
-                            <constraint firstItem="6AC-Ge-8zV" firstAttribute="top" secondItem="Sg3-q8-Y6n" secondAttribute="bottom" constant="8" symbolic="YES" id="pja-q8-pkP"/>
-                            <constraint firstItem="6AC-Ge-8zV" firstAttribute="trailing" secondItem="Y8Y-DJ-DMR" secondAttribute="trailing" id="rC4-JH-ck0"/>
+                            <constraint firstItem="d6E-fg-p4j" firstAttribute="top" secondItem="2nV-93-WKq" secondAttribute="bottom" constant="8" symbolic="YES" id="3id-NQ-qFg"/>
+                            <constraint firstAttribute="trailing" secondItem="6ei-e3-jYs" secondAttribute="trailing" id="42W-kX-lFC"/>
+                            <constraint firstItem="6ei-e3-jYs" firstAttribute="leading" secondItem="zwx-de-Gvw" secondAttribute="leading" id="AZu-3J-0vQ"/>
+                            <constraint firstItem="6AC-Ge-8zV" firstAttribute="trailing" secondItem="2nV-93-WKq" secondAttribute="trailing" id="AbL-hz-L8k"/>
+                            <constraint firstItem="6AC-Ge-8zV" firstAttribute="leading" secondItem="Sg3-q8-Y6n" secondAttribute="leading" id="CRz-wE-XOg"/>
+                            <constraint firstItem="6AC-Ge-8zV" firstAttribute="centerX" secondItem="6ei-e3-jYs" secondAttribute="centerX" id="CVe-Wx-bDR"/>
+                            <constraint firstItem="Sg3-q8-Y6n" firstAttribute="leading" secondItem="zwx-de-Gvw" secondAttribute="leadingMargin" id="D9o-qP-1Db"/>
+                            <constraint firstItem="5J6-Tv-O60" firstAttribute="leading" secondItem="zwx-de-Gvw" secondAttribute="leadingMargin" constant="26" id="EgZ-cS-kAj"/>
+                            <constraint firstItem="2nV-93-WKq" firstAttribute="top" secondItem="6ei-e3-jYs" secondAttribute="bottom" constant="8" symbolic="YES" id="GIb-Ow-gOp"/>
+                            <constraint firstItem="Y8Y-DJ-DMR" firstAttribute="trailing" secondItem="6AC-Ge-8zV" secondAttribute="trailing" id="JJ1-0i-ERb"/>
+                            <constraint firstItem="Y8Y-DJ-DMR" firstAttribute="top" secondItem="TRz-D8-l9v" secondAttribute="bottom" constant="8" symbolic="YES" id="Svr-Wb-7NX"/>
+                            <constraint firstItem="TRz-D8-l9v" firstAttribute="top" secondItem="XJ1-U3-tq9" secondAttribute="bottom" constant="8" symbolic="YES" id="WAT-gs-RZr"/>
+                            <constraint firstItem="5J6-Tv-O60" firstAttribute="top" secondItem="6AC-Ge-8zV" secondAttribute="bottom" constant="8" symbolic="YES" id="Xd3-gD-uhC"/>
+                            <constraint firstItem="Sg3-q8-Y6n" firstAttribute="top" secondItem="Y8Y-DJ-DMR" secondAttribute="bottom" constant="8" symbolic="YES" id="i8c-vZ-Xiv"/>
+                            <constraint firstItem="TRz-D8-l9v" firstAttribute="leading" secondItem="Y8Y-DJ-DMR" secondAttribute="leading" id="iZW-V3-xJz"/>
+                            <constraint firstItem="6ei-e3-jYs" firstAttribute="top" secondItem="5J6-Tv-O60" secondAttribute="bottom" constant="8" symbolic="YES" id="lni-Sz-Nxl"/>
+                            <constraint firstItem="Sg3-q8-Y6n" firstAttribute="leading" secondItem="Y8Y-DJ-DMR" secondAttribute="leading" id="mMb-eu-ysN"/>
+                            <constraint firstItem="6AC-Ge-8zV" firstAttribute="top" secondItem="Sg3-q8-Y6n" secondAttribute="bottom" constant="8" symbolic="YES" id="qsL-BF-AJZ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="longPressGestureRecognizer" destination="TM4-yA-vln" id="O4u-gE-j3Z"/>
+                        <outlet property="mapView" destination="6ei-e3-jYs" id="yg1-3U-6Q4"/>
                         <outlet property="sportTextField" destination="6AC-Ge-8zV" id="idU-NB-AIg"/>
                         <outlet property="startTime" destination="Y8Y-DJ-DMR" id="nsj-sk-pu7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0H-gs-EnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="TM4-yA-vln">
+                    <connections>
+                        <action selector="longPressEvent:" destination="GA3-5y-yQt" id="RUF-N5-kDu"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4182" y="430"/>
         </scene>

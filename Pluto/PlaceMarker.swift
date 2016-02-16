@@ -9,10 +9,10 @@
 import GoogleMaps
 
 class PlaceMarker: GMSMarker {
-    let latitude: Double!
-    let longitude: Double!
+    let latitude: CLLocationDegrees!
+    let longitude: CLLocationDegrees!
     
-    init(latitude: Double, longitude: Double) {
+    init(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         self.latitude = latitude
         self.longitude = longitude
         super.init()

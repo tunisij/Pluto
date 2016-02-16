@@ -21,9 +21,11 @@ class Game {
     var awayTeamKey: String!
     
     
-    init(homeTeamKey: String, awayTeamKey: String = "", sportKey: String, startTime: NSDate, latitude: Double, longitude: Double, key: String = "") {
+    init(homeTeamKey: String, awayTeamKey: String, sportKey: String, startTime: NSDate, latitude: Double, longitude: Double, key: String = "") {
         self.key = key
         self.sportKey = sportKey
+        self.homeTeamKey = homeTeamKey
+        self.awayTeamKey = awayTeamKey
         self.startTime = startTime
         self.latitude = latitude
         self.longitude = longitude

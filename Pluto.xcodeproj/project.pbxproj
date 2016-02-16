@@ -32,6 +32,7 @@
 		5B900D861C273B1F003EB582 /* PlutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D851C273B1F003EB582 /* PlutoTests.swift */; };
 		5B900D911C273B1F003EB582 /* PlutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D901C273B1F003EB582 /* PlutoUITests.swift */; };
 		5B900DA21C27480A003EB582 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900DA11C27480A003EB582 /* HomeViewController.swift */; };
+		5BD5467F1C729C49001F4AF7 /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD5467E1C729C49001F4AF7 /* PlacesModel.swift */; };
 		5BDEE7411C5727A20064405B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDEE7401C5727A20064405B /* Game.swift */; };
 		5BF991761C65270D00EC5626 /* SettingsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF991751C65270D00EC5626 /* SettingsContainerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		5B900D901C273B1F003EB582 /* PlutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlutoUITests.swift; sourceTree = "<group>"; };
 		5B900D921C273B1F003EB582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B900DA11C27480A003EB582 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5BD5467E1C729C49001F4AF7 /* PlacesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
 		5BDEE7401C5727A20064405B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5BF991751C65270D00EC5626 /* SettingsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContainerViewController.swift; sourceTree = "<group>"; };
 		CCF763C933929A81A4EAE6C5 /* Pods_Pluto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pluto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 		5B2185AC1C5BE848009D4A25 /* Custom Objects */ = {
 			isa = PBXGroup;
 			children = (
+				5BD5467E1C729C49001F4AF7 /* PlacesModel.swift */,
 				5BDEE7401C5727A20064405B /* Game.swift */,
 				5B2185B31C5BEC5B009D4A25 /* User.swift */,
 				5B2185B51C5BEF46009D4A25 /* Sport.swift */,
@@ -462,6 +465,7 @@
 				5B5F607A1C456CAF008E85A0 /* UIViewControllerExtension.swift in Sources */,
 				5B5E519F1C5C0EC700E21FB3 /* UserActions.swift in Sources */,
 				5B0FE5C01C571CDF00872AFA /* PlaceMarker.swift in Sources */,
+				5BD5467F1C729C49001F4AF7 /* PlacesModel.swift in Sources */,
 				5B0FE5C41C5721EE00872AFA /* GameDataProvider.swift in Sources */,
 				5BF991761C65270D00EC5626 /* SettingsContainerViewController.swift in Sources */,
 				5B5E51971C5C018E00E21FB3 /* Record.swift in Sources */,

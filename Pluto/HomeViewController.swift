@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     let dataProvider = GameDataProvider()
+    let placesModel = PlacesModel()
     
     var games: Games = []
     
@@ -25,16 +26,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
     }
     
-    override func viewWillAppear(animated: Bool) {
-//            self.parentViewController!.title = "Pluto"
-        
-            dataProvider.findAllGames() { (games) in
-//            let places = self.placesModel.createPlaces(games)
-//            
-//            self.mapView.clear()
-//            for placeMarker in self.placesModel.createPlaceMarkers(places) {
-//                placeMarker.map = self.mapView
-//            }
+    override func viewDidAppear(animated: Bool) {
+        dataProvider.findAllGames() { (games) in
+            self.mapView.clear()
+            for placeMarker in self.placesModel.createPlaceMarkers(games) {
+                placeMarker.map = self.mapView
+                self.mapView.reloadInputViews()
+            }
         }
     }
     
@@ -53,6 +51,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         }
         
     }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("failed to get location")
+    }
+    
+    
     
     @IBAction func createATeamButtonClicked(sender: AnyObject) {
         
