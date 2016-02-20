@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2100088D31407537E1A65B92 /* Pods_Pluto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF763C933929A81A4EAE6C5 /* Pods_Pluto.framework */; };
+		5B0D1BE11C776D8700A51457 /* PostAGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D1BE01C776D8700A51457 /* PostAGameViewController.swift */; };
+		5B0D1BE31C77733300A51457 /* ViewNearbyGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D1BE21C77733300A51457 /* ViewNearbyGamesViewController.swift */; };
 		5B0FE5C01C571CDF00872AFA /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */; };
 		5B0FE5C41C5721EE00872AFA /* GameDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */; };
-		5B2185A91C585B78009D4A25 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185A81C585B78009D4A25 /* SettingsTableViewController.swift */; };
+		5B2185A91C585B78009D4A25 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185A81C585B78009D4A25 /* SettingsViewController.swift */; };
 		5B2185AB1C58613B009D4A25 /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185AA1C58613B009D4A25 /* LegalViewController.swift */; };
 		5B2185B11C5BE960009D4A25 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B01C5BE960009D4A25 /* ProfileViewController.swift */; };
 		5B2185B41C5BEC5B009D4A25 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B31C5BEC5B009D4A25 /* User.swift */; };
 		5B2185B61C5BEF46009D4A25 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B51C5BEF46009D4A25 /* Sport.swift */; };
 		5B2185B81C5BFB22009D4A25 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B71C5BFB22009D4A25 /* Team.swift */; };
 		5B2185BA1C5BFB2D009D4A25 /* Squad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B91C5BFB2D009D4A25 /* Squad.swift */; };
-		5B21B56E1C6ABDA70015F601 /* CreateAGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21B56D1C6ABDA70015F601 /* CreateAGameViewController.swift */; };
 		5B21B5701C6AC5C70015F601 /* CreateAGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21B56F1C6AC5C70015F601 /* CreateAGameModel.swift */; };
 		5B21B5721C6AD4750015F601 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21B5711C6AD4750015F601 /* LoginModel.swift */; };
 		5B5E51971C5C018E00E21FB3 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E51961C5C018E00E21FB3 /* Record.swift */; };
@@ -32,9 +33,9 @@
 		5B900D861C273B1F003EB582 /* PlutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D851C273B1F003EB582 /* PlutoTests.swift */; };
 		5B900D911C273B1F003EB582 /* PlutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900D901C273B1F003EB582 /* PlutoUITests.swift */; };
 		5B900DA21C27480A003EB582 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B900DA11C27480A003EB582 /* HomeViewController.swift */; };
+		5B96B0251C78C57E000F099F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96B0241C78C57E000F099F /* GameViewController.swift */; };
 		5BD5467F1C729C49001F4AF7 /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD5467E1C729C49001F4AF7 /* PlacesModel.swift */; };
 		5BDEE7411C5727A20064405B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDEE7401C5727A20064405B /* Game.swift */; };
-		5BF991761C65270D00EC5626 /* SettingsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF991751C65270D00EC5626 /* SettingsContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,16 +58,17 @@
 /* Begin PBXFileReference section */
 		0150F97F62946A589B4EF427 /* Pods-Pluto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.release.xcconfig"; sourceTree = "<group>"; };
 		4FB7BB7DE1A3A02F6A168985 /* Pods-Pluto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.debug.xcconfig"; sourceTree = "<group>"; };
+		5B0D1BE01C776D8700A51457 /* PostAGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAGameViewController.swift; sourceTree = "<group>"; };
+		5B0D1BE21C77733300A51457 /* ViewNearbyGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewNearbyGamesViewController.swift; sourceTree = "<group>"; };
 		5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataProvider.swift; sourceTree = "<group>"; };
-		5B2185A81C585B78009D4A25 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		5B2185A81C585B78009D4A25 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5B2185AA1C58613B009D4A25 /* LegalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
 		5B2185B01C5BE960009D4A25 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5B2185B31C5BEC5B009D4A25 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B2185B51C5BEF46009D4A25 /* Sport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 		5B2185B71C5BFB22009D4A25 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		5B2185B91C5BFB2D009D4A25 /* Squad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squad.swift; sourceTree = "<group>"; };
-		5B21B56D1C6ABDA70015F601 /* CreateAGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAGameViewController.swift; sourceTree = "<group>"; };
 		5B21B56F1C6AC5C70015F601 /* CreateAGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAGameModel.swift; sourceTree = "<group>"; };
 		5B21B5711C6AD4750015F601 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		5B5E51961C5C018E00E21FB3 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
@@ -88,9 +90,9 @@
 		5B900D901C273B1F003EB582 /* PlutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlutoUITests.swift; sourceTree = "<group>"; };
 		5B900D921C273B1F003EB582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B900DA11C27480A003EB582 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5B96B0241C78C57E000F099F /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5BD5467E1C729C49001F4AF7 /* PlacesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
 		5BDEE7401C5727A20064405B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		5BF991751C65270D00EC5626 /* SettingsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContainerViewController.swift; sourceTree = "<group>"; };
 		CCF763C933929A81A4EAE6C5 /* Pods_Pluto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pluto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,7 +133,6 @@
 		5B2185AC1C5BE848009D4A25 /* Custom Objects */ = {
 			isa = PBXGroup;
 			children = (
-				5BD5467E1C729C49001F4AF7 /* PlacesModel.swift */,
 				5BDEE7401C5727A20064405B /* Game.swift */,
 				5B2185B31C5BEC5B009D4A25 /* User.swift */,
 				5B2185B51C5BEF46009D4A25 /* Sport.swift */,
@@ -156,8 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				5B900DA11C27480A003EB582 /* HomeViewController.swift */,
-				5B21B56D1C6ABDA70015F601 /* CreateAGameViewController.swift */,
-				5B21B56F1C6AC5C70015F601 /* CreateAGameModel.swift */,
+				5B0D1BE21C77733300A51457 /* ViewNearbyGamesViewController.swift */,
+				5B0D1BE01C776D8700A51457 /* PostAGameViewController.swift */,
+				5B96B0241C78C57E000F099F /* GameViewController.swift */,
 			);
 			name = HomeTab;
 			sourceTree = "<group>";
@@ -189,10 +191,8 @@
 		5B5F60881C49D164008E85A0 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				5B2185A81C585B78009D4A25 /* SettingsTableViewController.swift */,
-				5B21B5711C6AD4750015F601 /* LoginModel.swift */,
+				5B2185A81C585B78009D4A25 /* SettingsViewController.swift */,
 				5B2185AA1C58613B009D4A25 /* LegalViewController.swift */,
-				5BF991751C65270D00EC5626 /* SettingsContainerViewController.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -224,8 +224,9 @@
 			children = (
 				5B900D741C273B1F003EB582 /* Main.storyboard */,
 				5B900D701C273B1F003EB582 /* AppDelegate.swift */,
-				5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */,
 				5B5E519D1C5C0B4E00E21FB3 /* Google Maps */,
+				5B96B0261C78DF72000F099F /* Models */,
+				5B96B0271C78DF8B000F099F /* Data Providers */,
 				5B2185AC1C5BE848009D4A25 /* Custom Objects */,
 				5B2185AD1C5BE880009D4A25 /* Global */,
 				5B5F60881C49D164008E85A0 /* Settings */,
@@ -256,6 +257,24 @@
 				5B900D921C273B1F003EB582 /* Info.plist */,
 			);
 			path = PlutoUITests;
+			sourceTree = "<group>";
+		};
+		5B96B0261C78DF72000F099F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B21B5711C6AD4750015F601 /* LoginModel.swift */,
+				5BD5467E1C729C49001F4AF7 /* PlacesModel.swift */,
+				5B21B56F1C6AC5C70015F601 /* CreateAGameModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5B96B0271C78DF8B000F099F /* Data Providers */ = {
+			isa = PBXGroup;
+			children = (
+				5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */,
+			);
+			name = "Data Providers";
 			sourceTree = "<group>";
 		};
 		7B384FA8998F98E63285698B /* Pods */ = {
@@ -456,23 +475,24 @@
 				5B2185BA1C5BFB2D009D4A25 /* Squad.swift in Sources */,
 				5BDEE7411C5727A20064405B /* Game.swift in Sources */,
 				5B21B5721C6AD4750015F601 /* LoginModel.swift in Sources */,
+				5B96B0251C78C57E000F099F /* GameViewController.swift in Sources */,
 				5B900D711C273B1F003EB582 /* AppDelegate.swift in Sources */,
-				5B21B56E1C6ABDA70015F601 /* CreateAGameViewController.swift in Sources */,
 				5B2185B11C5BE960009D4A25 /* ProfileViewController.swift in Sources */,
 				5B5E519B1C5C06CB00E21FB3 /* SquadsTableViewController.swift in Sources */,
 				5B2185AB1C58613B009D4A25 /* LegalViewController.swift in Sources */,
+				5B0D1BE11C776D8700A51457 /* PostAGameViewController.swift in Sources */,
 				5B2185B61C5BEF46009D4A25 /* Sport.swift in Sources */,
 				5B5F607A1C456CAF008E85A0 /* UIViewControllerExtension.swift in Sources */,
 				5B5E519F1C5C0EC700E21FB3 /* UserActions.swift in Sources */,
 				5B0FE5C01C571CDF00872AFA /* PlaceMarker.swift in Sources */,
 				5BD5467F1C729C49001F4AF7 /* PlacesModel.swift in Sources */,
 				5B0FE5C41C5721EE00872AFA /* GameDataProvider.swift in Sources */,
-				5BF991761C65270D00EC5626 /* SettingsContainerViewController.swift in Sources */,
 				5B5E51971C5C018E00E21FB3 /* Record.swift in Sources */,
-				5B2185A91C585B78009D4A25 /* SettingsTableViewController.swift in Sources */,
+				5B2185A91C585B78009D4A25 /* SettingsViewController.swift in Sources */,
 				5B900DA21C27480A003EB582 /* HomeViewController.swift in Sources */,
 				5B21B5701C6AC5C70015F601 /* CreateAGameModel.swift in Sources */,
 				5B2185B81C5BFB22009D4A25 /* Team.swift in Sources */,
+				5B0D1BE31C77733300A51457 /* ViewNearbyGamesViewController.swift in Sources */,
 				5B5F60801C457705008E85A0 /* AlertControllerFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

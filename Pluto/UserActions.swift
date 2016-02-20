@@ -27,7 +27,20 @@ func getUserUid() -> String! {
     return ""
 }
 
-func deleteAccount(sender: AnyObject) {    
+func getUser(completionHandler: (user: User?) -> ()) {
+    let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")
+    var user: User?
+    
+    ref.queryOrderedByChild("uid").queryEqualToValue(getUserUid()).observeEventType(.Value, withBlock: { snapshot in
+        for child in snapshot.children {
+            user = User(snapshot: child as! FDataSnapshot)
+        }
+        
+        completionHandler(user: user)
+    })
+}
+
+func deleteAccount(sender: AnyObject) {
     let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com")
     ref.unauth()
     FBSDKLoginManager().logOut()

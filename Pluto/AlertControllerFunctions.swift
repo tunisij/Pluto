@@ -27,14 +27,14 @@ func displayOkAlert(title: String, message: String, sender: AnyObject) {
 //    sender.presentViewController(alert, animated: true, completion: nil)
 //}
 
-func attemptDelete(title: String, message: String, sender: UITableViewController) {
+func attemptDelete(title: String, message: String, sender: UITableView, parent: UIViewController) {
     let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.ActionSheet)
     let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
     let deleteAction = UIAlertAction(title: "Delete", style: .Destructive, handler: { (action: UIAlertAction!) in
         deleteAccount(sender)
-        sender.tableView.reloadData()
+        sender.reloadData()
     })
     alert.addAction(cancelAction)
     alert.addAction(deleteAction)
-    sender.presentViewController(alert, animated: true, completion: nil)
+    parent.presentViewController(alert, animated: true, completion: nil)
 }

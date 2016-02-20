@@ -14,7 +14,7 @@ class LoginModel {
     func login() {
         let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com")
         let facebookLogin = FBSDKLoginManager()
-        facebookLogin.logInWithReadPermissions(["email"], handler: {
+        facebookLogin.logInWithReadPermissions(["public_profile, email"], handler: {
             (facebookResult, facebookError) -> Void in
             if facebookError != nil {
                 
@@ -22,19 +22,55 @@ class LoginModel {
                 
             } else {
                 let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
-                ref.authWithOAuthProvider("facebook", token: accessToken,
-                    withCompletionBlock: { error, authData in
-                        if error == nil {
-                            //change to have user select which team to post as, and use team uid
-                            let user = User(authData: ref.authData)
-                            let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")
+                ref.authWithOAuthProvider("facebook", token: accessToken, withCompletionBlock: { error, authData in
+                    if error == nil {
                             
-                            let userRef = ref.childByAppendingPath(user.uid)
+                        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "email, name"] )
+                        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
                             
-                            userRef.setValue(user.toAnyObject())
-                        }
+                            if ((error) == nil) {
+                                let email = result.valueForKey("email") as? String
+                                let username = result.valueForKey("name") as? String
+                                
+                                let user = User(authData: ref.authData, username: username!, email: email!)
+                                let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")
+                                
+                                let userRef = ref.childByAppendingPath(user.uid)
+                                
+                                userRef.setValue(user.toAnyObject())
+                            }    
+                        })
+                    }
                 })
             }
         })
     }
+    
+    func loginHelper() {
+        let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com")
+        let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
+        
+        ref.authWithOAuthProvider("facebook", token: accessToken, withCompletionBlock: { error, authData in
+            if error == nil {
+                
+                let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "email, name"] )
+                graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
+                    
+                    if ((error) == nil) {
+                        let email = result.valueForKey("email") as? String
+                        let username = result.valueForKey("name") as? String
+                        
+                        let user = User(authData: ref.authData, username: username!, email: email!)
+                        let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")
+                        
+                        let userRef = ref.childByAppendingPath(user.uid)
+                        
+                        userRef.setValue(user.toAnyObject())
+                    }
+                })
+            }
+        })
+
+    }
+    
 }
