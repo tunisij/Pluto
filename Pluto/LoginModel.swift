@@ -14,7 +14,7 @@ class LoginModel {
     func login() {
         let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com")
         let facebookLogin = FBSDKLoginManager()
-        facebookLogin.logInWithReadPermissions(["public_profile, email"], handler: {
+        facebookLogin.logInWithReadPermissions(["user_friends, public_profile, email"], handler: {
             (facebookResult, facebookError) -> Void in
             if facebookError != nil {
                 

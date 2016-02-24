@@ -12,8 +12,6 @@ import GoogleMaps
 class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     
     @IBOutlet weak var mapView: GMSMapView!
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBOutlet weak var postAGameContainter: UIView!
     @IBOutlet weak var viewNearbyGamesContainer: UIView!
     
     let locationManager = CLLocationManager()
@@ -68,10 +66,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
         }
     }
     
-    override func viewWillAppear(animated: Bool) {
-        chooseSegmentToShow()
-    }
-    
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .AuthorizedWhenInUse {
             locationManager.startUpdatingLocation()
@@ -88,50 +82,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
             locationManager.stopUpdatingLocation()
         }
         
-    }
-    
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print(error.description)
-    }
-    
-    func mapView(mapView: GMSMapView!, didLongPressAtCoordinate coordinate: CLLocationCoordinate2D) {
-        if placeMarkers.count > 0 {
-            placeMarkers[0].map = nil
-            placeMarkers.removeAll()
-        }
-        placeMarkers.append(PlaceMarker(latitude: coordinate.latitude, longitude: coordinate.longitude))
-        placeMarkers[0].map = self.mapView
-        self.mapView.reloadInputViews()
-        
-        var vc: PostAGameViewController
-        for viewController in self.childViewControllers {
-            if viewController.isKindOfClass(PostAGameViewController) {
-                vc = viewController as! PostAGameViewController
-                vc.instructionLabel.hidden = true
-                vc.submitButton.hidden = false
-                vc.latitude = coordinate.latitude
-                vc.longitude = coordinate.longitude
-            }
-        }
-        
-    }
-    
-    @IBAction func segmentedControlClicked(sender: AnyObject) {
-        chooseSegmentToShow()
-    }
-    
-    private func chooseSegmentToShow() {
-        switch segmentedControl.selectedSegmentIndex {
-        case 0:
-            self.postAGameContainter.hidden = false
-            self.viewNearbyGamesContainer.hidden = true
-        case 1:
-            self.postAGameContainter.hidden = true
-            self.viewNearbyGamesContainer.hidden = false
-        default:
-            break;
-        }
-
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
