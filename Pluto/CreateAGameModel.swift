@@ -13,7 +13,7 @@ class CreateAGameModel {
     let gameRef = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/games")
     let userRef = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")
     
-    func persist(sportKey: String, startTime: NSDate, latitude: CLLocationDegrees, longitude: CLLocationDegrees, key: String) -> String? {
+    func persist(sportKey: String, startTime: NSDate, latitude: CLLocationDegrees, longitude: CLLocationDegrees) -> String? {
 
         if sportKey.isEmpty {
             return "Must enter a sport"
@@ -24,10 +24,10 @@ class CreateAGameModel {
         } else if !isUserLoggedIn() {
             return "Login to post a game"
         } else {
-            let game = Game(homeTeamKey: getUserUid(), awayTeamKey: "test", sportKey: sportKey, startTime: startTime, latitude: latitude, longitude: longitude, key: key)
+            let game = Game(homeTeamKey: getUserUid(), awayTeamKey: "test", sportKey: sportKey, startTime: startTime, latitude: latitude, longitude: longitude, key: NSUUID().UUIDString)
             
-            let gameRef = self.gameRef.childByAppendingPath(key)
-            let userRef = self.userRef.childByAppendingPath(getUserUid()).childByAppendingPath("games").childByAppendingPath(key)
+            let gameRef = self.gameRef.childByAppendingPath(game.key)
+            let userRef = self.userRef.childByAppendingPath(getUserUid()).childByAppendingPath("games").childByAppendingPath(game.key)
             
             gameRef.setValue(game.toAnyObject())
             userRef.setValue(game.key)

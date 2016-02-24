@@ -79,7 +79,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        
+        ref.unauth()
     }
     
 }

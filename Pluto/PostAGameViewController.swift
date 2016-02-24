@@ -12,6 +12,7 @@ class PostAGameViewController: UIViewController {
     @IBOutlet weak var sportTextField: UITextField!
     @IBOutlet weak var instructionLabel: UILabel!
     @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var teamPicker: UIPickerView!
     
     var latitude: CLLocationDegrees = 0.0
     var longitude: CLLocationDegrees = 0.0
@@ -29,7 +30,7 @@ class PostAGameViewController: UIViewController {
     
     @IBAction func submitButtonClicked(sender: UIButton) {
         if latitude != 0.0 && longitude != 0.0 {
-            let persisted = model.persist(sportTextField.text!, startTime: startTime.date, latitude: latitude, longitude: longitude, key: NSUUID().UUIDString)
+            let persisted = model.persist(sportTextField.text!, startTime: startTime.date, latitude: latitude, longitude: longitude)
             
             if persisted != nil {
                 instructionLabel.text = persisted

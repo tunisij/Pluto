@@ -42,9 +42,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
         mapView.delegate = self
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
         
     }
     
@@ -73,6 +77,8 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
             locationManager.startUpdatingLocation()
             mapView.myLocationEnabled = true
             mapView.settings.myLocationButton = true
+        } else if status == .Denied {
+            locationManager.stopUpdatingLocation()
         }
     }
     
@@ -85,7 +91,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("failed to get location")
+        print(error.description)
     }
     
     func mapView(mapView: GMSMapView!, didLongPressAtCoordinate coordinate: CLLocationCoordinate2D) {
@@ -126,6 +132,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
             break;
         }
 
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if identifier == "showGameSegue" {
+            return gameToShow != nil
+        }
+        return true
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

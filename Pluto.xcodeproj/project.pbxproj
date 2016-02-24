@@ -18,11 +18,14 @@
 		5B2185B41C5BEC5B009D4A25 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B31C5BEC5B009D4A25 /* User.swift */; };
 		5B2185B61C5BEF46009D4A25 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B51C5BEF46009D4A25 /* Sport.swift */; };
 		5B2185B81C5BFB22009D4A25 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B71C5BFB22009D4A25 /* Team.swift */; };
-		5B2185BA1C5BFB2D009D4A25 /* Squad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2185B91C5BFB2D009D4A25 /* Squad.swift */; };
 		5B21B5701C6AC5C70015F601 /* CreateAGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21B56F1C6AC5C70015F601 /* CreateAGameModel.swift */; };
 		5B21B5721C6AD4750015F601 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21B5711C6AD4750015F601 /* LoginModel.swift */; };
+		5B464FED1C7BC3D900BDDF61 /* TeamDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B464FEC1C7BC3D900BDDF61 /* TeamDataProvider.swift */; };
+		5B464FEF1C7BC6F900BDDF61 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B464FEE1C7BC6F900BDDF61 /* TeamViewController.swift */; };
+		5B464FF11C7BCA1400BDDF61 /* CreateATeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B464FF01C7BCA1400BDDF61 /* CreateATeamModel.swift */; };
+		5B464FF31C7BCE2600BDDF61 /* CreateANewTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B464FF21C7BCE2600BDDF61 /* CreateANewTeamViewController.swift */; };
 		5B5E51971C5C018E00E21FB3 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E51961C5C018E00E21FB3 /* Record.swift */; };
-		5B5E519B1C5C06CB00E21FB3 /* SquadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E519A1C5C06CB00E21FB3 /* SquadsTableViewController.swift */; };
+		5B5E519B1C5C06CB00E21FB3 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E519A1C5C06CB00E21FB3 /* TeamsTableViewController.swift */; };
 		5B5E519F1C5C0EC700E21FB3 /* UserActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E519E1C5C0EC700E21FB3 /* UserActions.swift */; };
 		5B5F607A1C456CAF008E85A0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F60791C456CAF008E85A0 /* UIViewControllerExtension.swift */; };
 		5B5F60801C457705008E85A0 /* AlertControllerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F607F1C457705008E85A0 /* AlertControllerFunctions.swift */; };
@@ -68,11 +71,14 @@
 		5B2185B31C5BEC5B009D4A25 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B2185B51C5BEF46009D4A25 /* Sport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 		5B2185B71C5BFB22009D4A25 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		5B2185B91C5BFB2D009D4A25 /* Squad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squad.swift; sourceTree = "<group>"; };
 		5B21B56F1C6AC5C70015F601 /* CreateAGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAGameModel.swift; sourceTree = "<group>"; };
 		5B21B5711C6AD4750015F601 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		5B464FEC1C7BC3D900BDDF61 /* TeamDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataProvider.swift; sourceTree = "<group>"; };
+		5B464FEE1C7BC6F900BDDF61 /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		5B464FF01C7BCA1400BDDF61 /* CreateATeamModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateATeamModel.swift; sourceTree = "<group>"; };
+		5B464FF21C7BCE2600BDDF61 /* CreateANewTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateANewTeamViewController.swift; sourceTree = "<group>"; };
 		5B5E51961C5C018E00E21FB3 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
-		5B5E519A1C5C06CB00E21FB3 /* SquadsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquadsTableViewController.swift; sourceTree = "<group>"; };
+		5B5E519A1C5C06CB00E21FB3 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
 		5B5E519E1C5C0EC700E21FB3 /* UserActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserActions.swift; sourceTree = "<group>"; };
 		5B5F60791C456CAF008E85A0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5B5F607F1C457705008E85A0 /* AlertControllerFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllerFunctions.swift; sourceTree = "<group>"; };
@@ -137,7 +143,6 @@
 				5B2185B31C5BEC5B009D4A25 /* User.swift */,
 				5B2185B51C5BEF46009D4A25 /* Sport.swift */,
 				5B2185B71C5BFB22009D4A25 /* Team.swift */,
-				5B2185B91C5BFB2D009D4A25 /* Squad.swift */,
 				5B5E51961C5C018E00E21FB3 /* Record.swift */,
 			);
 			name = "Custom Objects";
@@ -175,7 +180,9 @@
 		5B5E519C1C5C06D100E21FB3 /* SquadsTab */ = {
 			isa = PBXGroup;
 			children = (
-				5B5E519A1C5C06CB00E21FB3 /* SquadsTableViewController.swift */,
+				5B5E519A1C5C06CB00E21FB3 /* TeamsTableViewController.swift */,
+				5B464FEE1C7BC6F900BDDF61 /* TeamViewController.swift */,
+				5B464FF21C7BCE2600BDDF61 /* CreateANewTeamViewController.swift */,
 			);
 			name = SquadsTab;
 			sourceTree = "<group>";
@@ -265,6 +272,7 @@
 				5B21B5711C6AD4750015F601 /* LoginModel.swift */,
 				5BD5467E1C729C49001F4AF7 /* PlacesModel.swift */,
 				5B21B56F1C6AC5C70015F601 /* CreateAGameModel.swift */,
+				5B464FF01C7BCA1400BDDF61 /* CreateATeamModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0FE5C31C5721EE00872AFA /* GameDataProvider.swift */,
+				5B464FEC1C7BC3D900BDDF61 /* TeamDataProvider.swift */,
 			);
 			name = "Data Providers";
 			sourceTree = "<group>";
@@ -472,23 +481,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B2185B41C5BEC5B009D4A25 /* User.swift in Sources */,
-				5B2185BA1C5BFB2D009D4A25 /* Squad.swift in Sources */,
 				5BDEE7411C5727A20064405B /* Game.swift in Sources */,
 				5B21B5721C6AD4750015F601 /* LoginModel.swift in Sources */,
 				5B96B0251C78C57E000F099F /* GameViewController.swift in Sources */,
 				5B900D711C273B1F003EB582 /* AppDelegate.swift in Sources */,
+				5B464FF11C7BCA1400BDDF61 /* CreateATeamModel.swift in Sources */,
 				5B2185B11C5BE960009D4A25 /* ProfileViewController.swift in Sources */,
-				5B5E519B1C5C06CB00E21FB3 /* SquadsTableViewController.swift in Sources */,
+				5B5E519B1C5C06CB00E21FB3 /* TeamsTableViewController.swift in Sources */,
 				5B2185AB1C58613B009D4A25 /* LegalViewController.swift in Sources */,
 				5B0D1BE11C776D8700A51457 /* PostAGameViewController.swift in Sources */,
 				5B2185B61C5BEF46009D4A25 /* Sport.swift in Sources */,
 				5B5F607A1C456CAF008E85A0 /* UIViewControllerExtension.swift in Sources */,
 				5B5E519F1C5C0EC700E21FB3 /* UserActions.swift in Sources */,
+				5B464FED1C7BC3D900BDDF61 /* TeamDataProvider.swift in Sources */,
+				5B464FEF1C7BC6F900BDDF61 /* TeamViewController.swift in Sources */,
 				5B0FE5C01C571CDF00872AFA /* PlaceMarker.swift in Sources */,
 				5BD5467F1C729C49001F4AF7 /* PlacesModel.swift in Sources */,
 				5B0FE5C41C5721EE00872AFA /* GameDataProvider.swift in Sources */,
 				5B5E51971C5C018E00E21FB3 /* Record.swift in Sources */,
 				5B2185A91C585B78009D4A25 /* SettingsViewController.swift in Sources */,
+				5B464FF31C7BCE2600BDDF61 /* CreateANewTeamViewController.swift in Sources */,
 				5B900DA21C27480A003EB582 /* HomeViewController.swift in Sources */,
 				5B21B5701C6AC5C70015F601 /* CreateAGameModel.swift in Sources */,
 				5B2185B81C5BFB22009D4A25 /* Team.swift in Sources */,

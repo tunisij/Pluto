@@ -10,8 +10,11 @@ class ViewNearbyGamesViewController: UIViewController, UITableViewDataSource, UI
     
     @IBOutlet weak var tableView: UITableView!
     
+    var isEmpty = true
+    
     var games: Games = [] {
         didSet {
+            isEmpty = games.count <= 0
             tableView.reloadData()
         }
     }
@@ -25,21 +28,31 @@ class ViewNearbyGamesViewController: UIViewController, UITableViewDataSource, UI
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return games.count
+        return isEmpty ? 2 : games.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("gameCell", forIndexPath: indexPath)
         
-        cell.textLabel!.text = games[indexPath.row].sportKey
-        cell.detailTextLabel?.text = games[indexPath.row].startTime.description
+        if !isEmpty {
+            cell.textLabel!.text = games[indexPath.row].sportKey
+            cell.detailTextLabel?.text = games[indexPath.row].startTime.description
+        } else {
+            switch indexPath.row {
+            case 0: cell.textLabel?.text = "There are no games nearby"
+            default: cell.textLabel?.text = "Try enabling location services for this app"
+            }
+            cell.detailTextLabel?.text = nil
+        }
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let vc = self.parentViewController as! HomeViewController
-        vc.gameToShow = games[indexPath.row]
+        if !isEmpty {
+            let vc = self.parentViewController as! HomeViewController
+            vc.gameToShow = games[indexPath.row]
+        }
     }
 
 }

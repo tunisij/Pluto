@@ -6,41 +6,62 @@
 //  Copyright © 2016 John Tunisi. All rights reserved.
 //
 
+import Firebase
+
 class Record {
     
-    var identifier: Int
-    var wins: Dictionary<Sport, Int>
-    var losses: Dictionary<Sport, Int>
-    var didNotShow: Int
-    var rating: Double
+    let key: String!
+    let ref: Firebase?
     
-    init(identifier: Int, wins: Dictionary<Sport, Int>, losses: Dictionary<Sport, Int>, didNotShow: Int, rating: Double) {
-        self.identifier = identifier
+    var wins: Int!
+    var losses: Int!
+    var didNotShow: Int!
+    var rating: Double!
+    
+    init(wins: Int, losses: Int, didNotShow: Int, rating: Double, key: String = "") {
+        self.key = key
         self.wins = wins
         self.losses = losses
         self.didNotShow = didNotShow
         self.rating = rating
+        self.ref = nil
     }
     
-    func getRecord() -> String {
-        return "\(wins) - \(losses)"
+    init(snapshot: FDataSnapshot) {
+        key = snapshot.key
+        wins = snapshot.value["wins"] as! Int
+        losses = snapshot.value["losses"] as! Int
+        didNotShow = snapshot.value["didNotShow"] as! Int
+        rating = snapshot.value["rating"] as! Double
+        ref = nil
     }
     
-    func getDidNotShowPercent() -> Double {
-        var totalWins = 0
-        var totalLosses = 0
-        
-        for winAmount in wins.values {
-            totalWins += winAmount
-        }
-        
-        for lossAmount in losses.values {
-            totalLosses += lossAmount
-        }
-        
-        return Double(didNotShow) / Double(totalWins + totalLosses)
+    func toAnyObject() -> AnyObject {
+        return [
+            "wins": wins,
+            "losses": losses,
+            "didNotShow": didNotShow,
+            "rating": rating
+        ]
     }
     
-    
+//    func getRecord() -> String {
+//        return "\(wins) - \(losses)"
+//    }
+//    
+//    func getDidNotShowPercent() -> Double {
+//        var totalWins = 0
+//        var totalLosses = 0
+//        
+//        for winAmount in wins.values {
+//            totalWins += winAmount
+//        }
+//        
+//        for lossAmount in losses.values {
+//            totalLosses += lossAmount
+//        }
+//        
+//        return Double(didNotShow) / Double(totalWins + totalLosses)
+//    }
     
 }

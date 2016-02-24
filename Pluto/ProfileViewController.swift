@@ -13,7 +13,14 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     var games: Games = []
     var gameToShow: Game?
-    var user: User?
+    var user: User? {
+        didSet {
+            if user == nil {
+                games = []
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     let dataProvider = GameDataProvider()
     
@@ -55,6 +62,10 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         gameToShow = games[indexPath.row]
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        return gameToShow != nil
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
