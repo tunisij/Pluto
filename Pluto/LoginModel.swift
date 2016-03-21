@@ -32,7 +32,7 @@ class LoginModel {
                                 let email = result.valueForKey("email") as? String
                                 let username = result.valueForKey("name") as? String
                                 
-                                let user = User(authData: ref.authData, username: username!, email: email!)
+                                let user = User(authData: ref.authData, username: username!, email: email!, teams: ["":""])
                                 let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")
                                 
                                 let userRef = ref.childByAppendingPath(user.uid)
@@ -60,7 +60,7 @@ class LoginModel {
                         let email = result.valueForKey("email") as? String
                         let username = result.valueForKey("name") as? String
                         
-                        let user = User(authData: ref.authData, username: username!, email: email!)
+                        let user = User(authData: ref.authData, username: username!, email: email!, teams: Dictionary<String, String>())
                         let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")
                         
                         let userRef = ref.childByAppendingPath(user.uid)

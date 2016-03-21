@@ -28,10 +28,12 @@ func displayOkAlert(title: String, message: String, sender: AnyObject) {
 //}
 
 func attemptDelete(title: String, message: String, sender: UITableView, parent: UIViewController) {
+    let userModel = UserModel()
+    
     let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.ActionSheet)
     let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
     let deleteAction = UIAlertAction(title: "Delete", style: .Destructive, handler: { (action: UIAlertAction!) in
-        deleteAccount(sender)
+        userModel.deleteAccount(sender)
         sender.reloadData()
     })
     alert.addAction(cancelAction)

@@ -15,14 +15,14 @@ class Team {
     
     var name: String!
     var captainKey: String!
-    var usersKey: String!
+    var users: Dictionary<String, String>
     var recordKey: String!
     
-    init(name: String, captainKey: String, usersKey: String, recordKey: String, key: String = "") {
+    init(name: String, captainKey: String, users: Dictionary<String, String>, recordKey: String, key: String = "") {
         self.key = key
         self.name = name
         self.captainKey = captainKey
-        self.usersKey = usersKey
+        self.users = users
         self.recordKey = recordKey
         self.ref = nil
     }
@@ -31,7 +31,7 @@ class Team {
         key = snapshot.key
         name = snapshot.value["name"] as! String
         captainKey = snapshot.value["captainKey"] as! String
-        usersKey = snapshot.value["usersKey"] as! String
+        users = snapshot.value["users"] as! Dictionary<String, String>
         recordKey = snapshot.value["recordKey"] as! String
         ref = snapshot.ref
     }
@@ -40,7 +40,7 @@ class Team {
         return [
             "name": name,
             "captainKey": captainKey,
-            "usersKey": usersKey,
+            "users": users,
             "recordKey": recordKey
         ]
     }

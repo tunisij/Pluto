@@ -23,6 +23,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     let dataProvider = GameDataProvider()
+    let userModel = UserModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidAppear(animated)
         self.user = nil
         
-        getUser({ (user) in
+        userModel.getUser({ (user) in
             self.user = user
             self.nameLabel.text = user?.username
             

@@ -17,6 +17,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com")
     let model = LoginModel()
+    let userModel = UserModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         fbButton.delegate = self
         
         bottomView.addSubview(fbButton)
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        tableView.reloadData()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -44,7 +48,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             cell = tableView.dequeueReusableCellWithIdentifier("legalCell", forIndexPath: indexPath)
             cell.textLabel?.text = "Legal"
         case 1:
-            if isUserLoggedIn() {
+            if userModel.isUserLoggedIn() {
                 cell = tableView.dequeueReusableCellWithIdentifier("deleteAccountCell", forIndexPath: indexPath)
                 cell.textLabel?.text = "Delete Account"
                 cell.textLabel?.textAlignment = .Center
@@ -61,7 +65,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch indexPath.section {
         case 1:
-            if isUserLoggedIn() {
+            if userModel.isUserLoggedIn() {
                 attemptDelete("Delete Account", message: "Are you sure you want to delete the account? This will delete all data associated with this Facebook account.", sender: self.tableView, parent: self)
             }
         default: break
@@ -72,6 +76,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         if !result.isCancelled {
             model.loginHelper()
         }
+        tableView.reloadData()
     }
     
     func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
@@ -79,6 +84,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        tableView.reloadData()
         ref.unauth()
     }
     

@@ -33,7 +33,8 @@ class PostAGameViewController: UIViewController, UIPickerViewDataSource, UIPicke
         }
     }
     
-    let model = CreateAGameModel()
+    let model = GameModel()
+    let userModel = UserModel()
     let dataProvider = TeamDataProvider()
     
     override func viewDidLoad() {
@@ -51,10 +52,10 @@ class PostAGameViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     override func viewDidAppear(animated: Bool) {
-        getUser({ (user) in
+        userModel.getUser({ (user) in
             self.user = user
             
-            self.dataProvider.findAllTeams({ (teams) in
+            self.dataProvider.findTeamsByUser(user, completionHandler: { (teams) in
                 self.teams = teams
                 self.teamPicker.reloadAllComponents()
             })
