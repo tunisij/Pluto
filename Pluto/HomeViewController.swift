@@ -13,9 +13,11 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var viewNearbyGamesContainer: UIView!
+    @IBOutlet weak var postAGameButton: UIButton!
     
     let locationManager = CLLocationManager()
     let dataProvider = GameDataProvider()
+    let userModel = UserModel()
     let placesModel = PlacesModel()
     var placeMarkers = PlaceMarkers()
     
@@ -51,6 +53,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     }
     
     override func viewDidAppear(animated: Bool) {
+        let isLoggedIn = userModel.isUserLoggedIn()
+        postAGameButton.hidden = !isLoggedIn
+        
+        populateMapWithGames()
+    }
+    
+    private func populateMapWithGames() {
         dataProvider.findGamesNearby(locationManager.location?.coordinate.latitude, longitude: locationManager.location?.coordinate.longitude) { (games) in
             self.games = games
             self.mapView.clear()
@@ -64,6 +73,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
                 self.mapView.reloadInputViews()
             }
         }
+
     }
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -78,8 +88,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, GMSMapVie
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 12, bearing: 0, viewingAngle: 0)
             locationManager.stopUpdatingLocation()
+            
+            populateMapWithGames()
         }
         
     }

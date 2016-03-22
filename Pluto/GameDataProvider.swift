@@ -39,7 +39,10 @@ class GameDataProvider {
                 let game = Game(snapshot: child as! FDataSnapshot)
                 
                 if game.longitude >= longitude! - 0.3 && game.longitude <= longitude! + 0.3 {
-                    games.append(game)
+                    
+                    if game.startTime.isGreaterThanDate(NSDate().addHours(-3)) {
+                        games.append(game)
+                    }
                 }
             }
 

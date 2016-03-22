@@ -48,7 +48,7 @@ class PostAGameViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     override func viewWillAppear(animated: Bool) {
-        startTime.minimumDate = NSDate(timeIntervalSinceNow: 900)
+        startTime.minimumDate = NSDate()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -64,21 +64,21 @@ class PostAGameViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
     @IBAction func submitButtonClicked(sender: UIButton) {
         if latitude != 0.0 && longitude != 0.0 {
-            let persisted = model.persist(sportTextField.text!, startTime: startTime.date, team: selectedTeam!, latitude: latitude, longitude: longitude)
+            let persisted = model.persist(sportTextField.text!, startTime: startTime.date, team: selectedTeam, latitude: latitude, longitude: longitude)
             
             if persisted != nil {
                 instructionLabel.text = persisted
                 instructionLabel.textColor = UIColor.redColor()
+                instructionLabel.hidden = false
             } else {
                 instructionLabel.text = "Long press on the map to select a location"
                 instructionLabel.textColor = UIColor.blackColor()
+                instructionLabel.hidden = false
                 submitButton.hidden = true
                 
                 resetFields()
+                self.navigationController?.popViewControllerAnimated(true)
             }
-            
-            instructionLabel.hidden = false
-            
         }
     }
     
@@ -135,11 +135,13 @@ class PostAGameViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedTeam = teams![row]
+        if teams != nil && !teams!.isEmpty {
+            selectedTeam = teams![row]
+        }
     }
     
     func resetFields() {
-        startTime.minimumDate = NSDate(timeIntervalSinceNow: 900)
+        startTime.minimumDate = NSDate()
         sportTextField.text?.removeAll()
     }
     

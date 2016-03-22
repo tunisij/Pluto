@@ -36,7 +36,12 @@ class ViewNearbyGamesViewController: UIViewController, UITableViewDataSource, UI
         
         if !isEmpty {
             cell.textLabel!.text = games[indexPath.row].sportKey
-            cell.detailTextLabel?.text = games[indexPath.row].startTime.description
+            
+            let formatter = NSDateFormatter()
+            formatter.dateStyle = NSDateFormatterStyle.LongStyle
+            formatter.timeStyle = .MediumStyle
+                        
+            cell.detailTextLabel?.text = formatter.stringFromDate(games[indexPath.row].startTime)
         } else {
             switch indexPath.row {
             case 0: cell.textLabel?.text = "There are no games nearby"

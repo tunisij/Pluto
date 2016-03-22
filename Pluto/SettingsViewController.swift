@@ -13,7 +13,7 @@ import Firebase
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var fbLoginButton: FBSDKLoginButton!
     
     let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com")
     let model = LoginModel()
@@ -21,11 +21,8 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let fbButton = FBSDKLoginButton()
-        fbButton.delegate = self
         
-        bottomView.addSubview(fbButton)
+        fbLoginButton.delegate = self
     }
     
     override func viewDidAppear(animated: Bool) {
