@@ -50,6 +50,55 @@ class GameDataProvider {
         })
     }
     
+    func findUpcomingGames(user: User!, completionHandler: (games: Games) -> ()) {
+        let teamDataProvider = TeamDataProvider()
+        
+        teamDataProvider.findTeamsByUser(user!) { (teams) -> () in
+            for team in teams {
+                let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/games")
+                
+                ref.queryOrderedByChild("homeTeamKey").queryEqualToValue(team.key).observeSingleEventOfType(.Value, withBlock: { snapshot in
+                    var games = Games()
+                    
+                    for child in snapshot.children {
+                        let game = Game(snapshot: child as! FDataSnapshot)
+                        
+                        if !game.startTime.isLessThanDate(NSDate()) {
+                            games.append(game)
+                        }
+                    }
+                    
+                    completionHandler(games: games)
+                })
+            }
+        }
+    }
+    
+    func findPreviousGames(user: User!, completionHandler: (games: Games) -> ()) {
+        let teamDataProvider = TeamDataProvider()
+        
+        teamDataProvider.findTeamsByUser(user!) { (teams) -> () in
+            for team in teams {
+                let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/games")
+                
+                ref.queryOrderedByChild("homeTeamKey").queryEqualToValue(team.key).observeSingleEventOfType(.Value, withBlock: { snapshot in
+                    var games = Games()
+                    
+                    for child in snapshot.children {
+                        let game = Game(snapshot: child as! FDataSnapshot)
+                        
+                        if game.startTime.isLessThanDate(NSDate()) {
+                            games.append(game)
+                        }
+                    }
+                    
+                    completionHandler(games: games)
+                })
+            }
+        }
+        
+    }
+    
     func findGames(user: User?, completionHandler: (games: Games) -> ()) {
         if user == nil {
             return
@@ -69,5 +118,7 @@ class GameDataProvider {
         })
         
     }
+    
+    
     
 }

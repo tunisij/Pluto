@@ -18,10 +18,6 @@ class TeamDataProvider {
         let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/teams")
         var teams = Teams()
         
-        if user!.teams == nil {
-            return
-        }
-        
         ref.queryOrderedByChild("users/\(user!.uid)").queryEqualToValue(user?.uid).observeEventType(.Value, withBlock: { snapshot in
             
             for child in snapshot.children {

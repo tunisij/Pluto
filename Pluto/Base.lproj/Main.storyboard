@@ -215,15 +215,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous Games:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4Y-Yg-2nq">
-                                <rect key="frame" x="20" y="388" width="129" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gOx-l3-eZu">
-                                <rect key="frame" x="0.0" y="101" width="600" height="279"/>
+                                <rect key="frame" x="0.0" y="101" width="600" height="198"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="9S1-7H-0ew"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="upcomingGameCell" id="eU5-2w-UNf">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
@@ -240,11 +237,8 @@
                                 </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0iF-69-Zel">
-                                <rect key="frame" x="0.0" y="417" width="600" height="134"/>
+                                <rect key="frame" x="0.0" y="336" width="600" height="215"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="134" id="1ZB-K8-W5Y"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="previousGameCell" id="EZT-RK-m2E">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
@@ -260,20 +254,26 @@
                                     <outlet property="delegate" destination="MGr-Rg-H96" id="Iur-du-SVl"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous Games:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4Y-Yg-2nq">
+                                <rect key="frame" x="20" y="307" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0iF-69-Zel" firstAttribute="leading" secondItem="gOx-l3-eZu" secondAttribute="leading" id="26I-CY-j7s"/>
-                            <constraint firstItem="s4Y-Yg-2nq" firstAttribute="leading" secondItem="3nw-fu-yDj" secondAttribute="leading" id="7Bh-HZ-zZj"/>
-                            <constraint firstAttribute="trailing" secondItem="gOx-l3-eZu" secondAttribute="trailing" id="A6h-45-cKh"/>
-                            <constraint firstItem="0iF-69-Zel" firstAttribute="trailing" secondItem="gOx-l3-eZu" secondAttribute="trailing" id="Fxs-cb-8Qh"/>
-                            <constraint firstItem="s4Y-Yg-2nq" firstAttribute="top" secondItem="gOx-l3-eZu" secondAttribute="bottom" constant="8" symbolic="YES" id="H5f-C5-X9g"/>
-                            <constraint firstItem="0iF-69-Zel" firstAttribute="leading" secondItem="5Nm-SJ-pIx" secondAttribute="leading" id="RCx-IT-xJT"/>
-                            <constraint firstItem="0iF-69-Zel" firstAttribute="top" secondItem="s4Y-Yg-2nq" secondAttribute="bottom" constant="8" symbolic="YES" id="ai6-Fk-uUz"/>
-                            <constraint firstItem="gOx-l3-eZu" firstAttribute="top" secondItem="3nw-fu-yDj" secondAttribute="bottom" constant="8" symbolic="YES" id="fTA-v4-6sL"/>
-                            <constraint firstItem="0iF-69-Zel" firstAttribute="bottom" secondItem="myJ-aj-WoR" secondAttribute="top" id="mZZ-Qe-DjG"/>
-                            <constraint firstItem="s4Y-Yg-2nq" firstAttribute="leading" secondItem="5Nm-SJ-pIx" secondAttribute="leadingMargin" id="qRk-AY-2ZU"/>
-                            <constraint firstItem="3nw-fu-yDj" firstAttribute="top" secondItem="9Kc-LE-ycB" secondAttribute="bottom" constant="8" symbolic="YES" id="toB-u0-L9u"/>
+                            <constraint firstItem="s4Y-Yg-2nq" firstAttribute="top" secondItem="gOx-l3-eZu" secondAttribute="bottom" constant="8" symbolic="YES" id="0TN-t8-E8E"/>
+                            <constraint firstItem="3nw-fu-yDj" firstAttribute="top" secondItem="9Kc-LE-ycB" secondAttribute="bottom" constant="8" symbolic="YES" id="2yx-tJ-jRb"/>
+                            <constraint firstItem="s4Y-Yg-2nq" firstAttribute="leading" secondItem="3nw-fu-yDj" secondAttribute="leading" id="3gJ-JV-ZVh"/>
+                            <constraint firstItem="0iF-69-Zel" firstAttribute="top" secondItem="s4Y-Yg-2nq" secondAttribute="bottom" constant="8" symbolic="YES" id="8bN-Mk-bTT"/>
+                            <constraint firstItem="gOx-l3-eZu" firstAttribute="trailing" secondItem="0iF-69-Zel" secondAttribute="trailing" id="bfC-rB-Fpz"/>
+                            <constraint firstItem="0iF-69-Zel" firstAttribute="leading" secondItem="gOx-l3-eZu" secondAttribute="leading" id="eJJ-pa-fCt"/>
+                            <constraint firstItem="gOx-l3-eZu" firstAttribute="top" secondItem="3nw-fu-yDj" secondAttribute="bottom" constant="8" symbolic="YES" id="hPC-wO-BYi"/>
+                            <constraint firstAttribute="trailing" secondItem="0iF-69-Zel" secondAttribute="trailing" id="pFl-23-uMf"/>
+                            <constraint firstItem="3nw-fu-yDj" firstAttribute="leading" secondItem="5Nm-SJ-pIx" secondAttribute="leadingMargin" id="qM1-J9-0tH"/>
+                            <constraint firstItem="0iF-69-Zel" firstAttribute="leading" secondItem="5Nm-SJ-pIx" secondAttribute="leading" id="sSo-gt-fov"/>
+                            <constraint firstItem="0iF-69-Zel" firstAttribute="bottom" secondItem="myJ-aj-WoR" secondAttribute="top" id="vY2-z6-ul3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Games" id="1Tn-VT-NCh"/>

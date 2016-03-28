@@ -20,8 +20,6 @@ class GameModel {
             return "Must enter a sport"
         } else if team == nil {
             return "Must select a team"
-        } else if !startTime.isLessThanDate(NSDate()) {
-            return "Time must be set in the future"
         } else if latitude == 0.0 && longitude == 0.0 {
             return "Location invalid"
         } else if !userModel.isUserLoggedIn() {

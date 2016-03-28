@@ -25,8 +25,7 @@ class GamesContainerViewController: UIViewController, UITableViewDataSource, UIT
         }
     }
     
-    let teamDataProvider = TeamDataProvider()
-    let inviteDataProvider = InviteDataProvider()
+    let gameDataProvider = GameDataProvider()
     
     let model = TeamModel()
     let userModel = UserModel()
@@ -49,15 +48,18 @@ class GamesContainerViewController: UIViewController, UITableViewDataSource, UIT
         userModel.getUser({ (user) in
             self.user = user
             
-//            self.teamDataProvider.findTeamsByUser(user, completionHandler: { (upcomingGames) in
-//                self.upcomingGames = upcomingGames
-//                self.upcomingGamesTableView.reloadData()
-//            })
-//            
-//            self.inviteDataProvider.findInvitesByUser(user, completionHandler: { (previousGames) in
-//                self.previousGames = previousGames
-//                self.previousGamesTableView.reloadData()
-//            })
+            self.upcomingGames = []
+            self.previousGames = []
+            
+            self.gameDataProvider.findUpcomingGames(user!, completionHandler: { (upcomingGames) in
+                self.upcomingGames.appendContentsOf(upcomingGames)
+                self.upcomingGamesTableView.reloadData()
+            })
+            
+            self.gameDataProvider.findPreviousGames(user!, completionHandler: { (previousGames) in
+                self.previousGames.appendContentsOf(previousGames)
+                self.previousGamesTableView.reloadData()
+            })
         })
     }
     
@@ -73,9 +75,13 @@ class GamesContainerViewController: UIViewController, UITableViewDataSource, UIT
         if tableView == upcomingGamesTableView {
             let cell = tableView.dequeueReusableCellWithIdentifier("upcomingGameCell", forIndexPath: indexPath)
             
+            cell.textLabel?.text = upcomingGames[indexPath.row].sportKey
+            
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("previousGameCell", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = previousGames[indexPath.row].sportKey
             
             return cell
             
@@ -83,10 +89,10 @@ class GamesContainerViewController: UIViewController, UITableViewDataSource, UIT
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if tableView == self.upcomingGamesTableView {
-            self.performSegueWithIdentifier("showUpcomingGameSegue", sender: self)
-        } else if tableView == self.previousGamesTableView {
-            self.performSegueWithIdentifier("showPreviousGameSegue", sender: self)
-        }
+//        if tableView == self.upcomingGamesTableView {
+//            self.performSegueWithIdentifier("showUpcomingGameSegue", sender: self)
+//        } else if tableView == self.previousGamesTableView {
+//            self.performSegueWithIdentifier("showPreviousGameSegue", sender: self)
+//        }
     }
 }
