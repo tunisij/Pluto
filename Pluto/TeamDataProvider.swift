@@ -28,4 +28,18 @@ class TeamDataProvider {
             completionHandler(teams: teams)
         })
     }
+    
+    func findUsersByTeamKey(key: String, completionHandler: (user: User) -> ()) {
+        let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/teams/\(key)/users")
+        let userModel = UserModel()
+        
+        ref.observeEventType(.Value, withBlock: { snapshot in
+
+            for (key, _) in snapshot.value as! Dictionary<String, String> {
+                userModel.getUserByKey(key, completionHandler: { (user) -> () in
+                    completionHandler(user: user!)
+                })
+            }
+        })
+    }
 }

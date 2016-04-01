@@ -25,6 +25,8 @@ class GamesContainerViewController: UIViewController, UITableViewDataSource, UIT
         }
     }
     
+    var gameToShow: Game?
+    
     let gameDataProvider = GameDataProvider()
     
     let model = TeamModel()
@@ -89,10 +91,19 @@ class GamesContainerViewController: UIViewController, UITableViewDataSource, UIT
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        if tableView == self.upcomingGamesTableView {
-//            self.performSegueWithIdentifier("showUpcomingGameSegue", sender: self)
-//        } else if tableView == self.previousGamesTableView {
-//            self.performSegueWithIdentifier("showPreviousGameSegue", sender: self)
-//        }
+        if tableView == self.upcomingGamesTableView {
+            gameToShow = upcomingGames[indexPath.row]
+            self.performSegueWithIdentifier("showUpcomingGameSegue", sender: self)
+        } else if tableView == self.previousGamesTableView {
+            gameToShow = previousGames[indexPath.row]
+            self.performSegueWithIdentifier("showPreviousGameSegue", sender: self)
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showUpcomingGameSegue" || segue.identifier == "showPreviousGameSegue" {
+            let vc = segue.destinationViewController as! GameViewController
+            vc.game = gameToShow
+        }
     }
 }

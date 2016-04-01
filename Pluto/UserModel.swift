@@ -39,6 +39,20 @@ class UserModel {
         })
     }
     
+    func getUserByKey(key: String, completionHandler: (user: User?) -> ()) {
+        let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")
+        var user: User?
+        
+        ref.queryOrderedByChild("uid").queryEqualToValue(key).observeSingleEventOfType(.Value, withBlock: { snapshot in
+            for child in snapshot.children {
+                user = User(snapshot: child as! FDataSnapshot)
+            }
+            
+            completionHandler(user: user)
+        })
+        
+    }
+    
     func getUserByEmail(email: String!, completionHandler: (user: User?) -> ()) {
         let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")
         var user: User?
