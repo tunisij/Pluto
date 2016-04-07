@@ -62,7 +62,7 @@
                             <constraint firstItem="OMX-OY-DvQ" firstAttribute="top" secondItem="iEX-4c-JtR" secondAttribute="bottom" id="cz4-La-hgD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Pluto" id="IUZ-Vk-xCQ"/>
+                    <navigationItem key="navigationItem" title="Sports Game Finder" id="IUZ-Vk-xCQ"/>
                     <connections>
                         <outlet property="mapView" destination="1B6-qb-Ong" id="Vdn-tR-zf9"/>
                         <outlet property="postAGameButton" destination="oZD-Js-pMe" id="lrp-i7-snu"/>
@@ -176,12 +176,12 @@
             </objects>
             <point key="canvasLocation" x="3442" y="1162"/>
         </scene>
-        <!--Pluto-->
+        <!--Sports Galme Finder-->
         <scene sceneID="m2L-qW-EMb">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UHI-n7-ZpV" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UHI-n7-ZpV" userLabel="Sports Galme Finder" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Pluto" id="8JP-R8-BvP"/>
+                    <navigationItem key="navigationItem" title="Sports Game Finder" id="8JP-R8-BvP"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="IGI-1l-dnX">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -974,6 +974,6 @@
         <image name="Squads-Filled" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PS5-cc-a5o"/>
+        <segue reference="47R-vv-KlN"/>
     </inferredMetricsTieBreakers>
 </document>

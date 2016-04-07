@@ -50,6 +50,10 @@ class GamesContainerViewController: UIViewController, UITableViewDataSource, UIT
         userModel.getUser({ (user) in
             self.user = user
             
+            if user == nil {
+                return
+            }
+            
             self.upcomingGames = []
             self.previousGames = []
             
