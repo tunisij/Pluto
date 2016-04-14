@@ -37,7 +37,6 @@ class TeamModel {
                 
                 userRef.setValue(team.key, withCompletionBlock: { (error:NSError?, ref:Firebase!) in
                     self.sendInvites(team.key, teamName: name, sender: user!.username, users: friends)
-                    parent.navigationController!.dismissViewControllerAnimated(true, completion: nil)
                 })
             })
             
@@ -57,6 +56,9 @@ class TeamModel {
     func acceptInvite(invite: Invite) {
         let teamRef = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/teams/\(invite.teamKey)/users")
         teamRef.updateChildValues([invite.recipient: invite.recipient])
+        
+        let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/invites/\(invite.key)")
+        ref.removeValue()
     }
     
     func denyInvite(invite: Invite) {

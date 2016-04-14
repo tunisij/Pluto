@@ -57,8 +57,16 @@ class LoginModel {
                 graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
                     
                     if ((error) == nil) {
-                        let email = result.valueForKey("email") as? String
-                        let username = result.valueForKey("name") as? String
+                        var email = result.valueForKey("email") as? String
+                        var username = result.valueForKey("name") as? String
+                        
+                        if email == nil {
+                            email = ""
+                        }
+                        
+                        if username == nil {
+                            username = ""
+                        }
                         
                         let user = User(authData: ref.authData, username: username!, email: email!, teams: Dictionary<String, String>())
                         let ref = Firebase(url: "https://edu-gvsu-pluto.firebaseio.com/users")

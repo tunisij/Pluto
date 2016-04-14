@@ -41,6 +41,9 @@ class PostAGameViewController: UIViewController, UIPickerViewDataSource, UIPicke
         instructionLabel.hidden = false
         submitButton.hidden = true
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
         mapView.delegate = self
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()

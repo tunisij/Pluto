@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2100088D31407537E1A65B92 /* Pods_Pluto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF763C933929A81A4EAE6C5 /* Pods_Pluto.framework */; };
 		5B0D1BE11C776D8700A51457 /* PostAGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D1BE01C776D8700A51457 /* PostAGameViewController.swift */; };
 		5B0D1BE31C77733300A51457 /* ViewNearbyGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D1BE21C77733300A51457 /* ViewNearbyGamesViewController.swift */; };
 		5B0FE5C01C571CDF00872AFA /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */; };
@@ -45,6 +44,7 @@
 		5BDEE7411C5727A20064405B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDEE7401C5727A20064405B /* Game.swift */; };
 		5BEE2BFB1CA1F45E00D20D5D /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE2BFA1CA1F45E00D20D5D /* NSDateExtension.swift */; };
 		5BEE2BFD1CA2043800D20D5D /* GamesContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE2BFC1CA2043800D20D5D /* GamesContainerViewController.swift */; };
+		A7709108B9EDBF3CC1BA9CFF /* Pods_Pluto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B688BB7183CF1BD49A226 /* Pods_Pluto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0150F97F62946A589B4EF427 /* Pods-Pluto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.release.xcconfig"; sourceTree = "<group>"; };
-		4FB7BB7DE1A3A02F6A168985 /* Pods-Pluto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.debug.xcconfig"; sourceTree = "<group>"; };
+		33288419985C5526E612B432 /* Pods-Pluto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.release.xcconfig"; sourceTree = "<group>"; };
 		5B0D1BE01C776D8700A51457 /* PostAGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAGameViewController.swift; sourceTree = "<group>"; };
 		5B0D1BE21C77733300A51457 /* ViewNearbyGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewNearbyGamesViewController.swift; sourceTree = "<group>"; };
 		5B0FE5BF1C571CDF00872AFA /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
@@ -94,16 +93,16 @@
 		5B79DA501C9F346E0054D121 /* InviteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteCell.swift; sourceTree = "<group>"; };
 		5B79DA521C9F3C8C0054D121 /* InviteCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteCellDelegate.swift; sourceTree = "<group>"; };
 		5B79DA541C9F4B6A0054D121 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		5B900D6D1C273B1F003EB582 /* Pluto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pluto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B900D6D1C273B1F003EB582 /* Sports Game Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sports Game Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B900D701C273B1F003EB582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B900D751C273B1F003EB582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B900D771C273B1F003EB582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B900D7A1C273B1F003EB582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B900D7C1C273B1F003EB582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B900D811C273B1F003EB582 /* PlutoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlutoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B900D811C273B1F003EB582 /* Sports Game Finder.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sports Game Finder.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B900D851C273B1F003EB582 /* PlutoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlutoTests.swift; sourceTree = "<group>"; };
 		5B900D871C273B1F003EB582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B900D8C1C273B1F003EB582 /* PlutoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlutoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B900D8C1C273B1F003EB582 /* Sports Game Finder.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sports Game Finder.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B900D901C273B1F003EB582 /* PlutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlutoUITests.swift; sourceTree = "<group>"; };
 		5B900D921C273B1F003EB582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B900DA11C27480A003EB582 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +111,8 @@
 		5BDEE7401C5727A20064405B /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5BEE2BFA1CA1F45E00D20D5D /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		5BEE2BFC1CA2043800D20D5D /* GamesContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesContainerViewController.swift; sourceTree = "<group>"; };
-		CCF763C933929A81A4EAE6C5 /* Pods_Pluto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pluto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3B688BB7183CF1BD49A226 /* Pods_Pluto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pluto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B960B9BF1DFD531AAAA08CE8 /* Pods-Pluto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pluto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pluto/Pods-Pluto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2100088D31407537E1A65B92 /* Pods_Pluto.framework in Frameworks */,
+				A7709108B9EDBF3CC1BA9CFF /* Pods_Pluto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				5B303ED01CAF0C7C0055F945 /* GoogleMaps.framework */,
-				CCF763C933929A81A4EAE6C5 /* Pods_Pluto.framework */,
+				AB3B688BB7183CF1BD49A226 /* Pods_Pluto.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,26 +223,26 @@
 		5B900D641C273B1F003EB582 = {
 			isa = PBXGroup;
 			children = (
-				5B900D6F1C273B1F003EB582 /* Pluto */,
-				5B900D841C273B1F003EB582 /* PlutoTests */,
-				5B900D8F1C273B1F003EB582 /* PlutoUITests */,
+				5B900D6F1C273B1F003EB582 /* Sports Game Finder */,
+				5B900D841C273B1F003EB582 /* SportsGameFinderTests */,
+				5B900D8F1C273B1F003EB582 /* SportsGameFinderUITests */,
 				5B900D6E1C273B1F003EB582 /* Products */,
-				7B384FA8998F98E63285698B /* Pods */,
 				47A7229B0F53D5D42550AF4F /* Frameworks */,
+				B70C03180A00F8A939533B74 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		5B900D6E1C273B1F003EB582 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B900D6D1C273B1F003EB582 /* Pluto.app */,
-				5B900D811C273B1F003EB582 /* PlutoTests.xctest */,
-				5B900D8C1C273B1F003EB582 /* PlutoUITests.xctest */,
+				5B900D6D1C273B1F003EB582 /* Sports Game Finder.app */,
+				5B900D811C273B1F003EB582 /* Sports Game Finder.xctest */,
+				5B900D8C1C273B1F003EB582 /* Sports Game Finder.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5B900D6F1C273B1F003EB582 /* Pluto */ = {
+		5B900D6F1C273B1F003EB582 /* Sports Game Finder */ = {
 			isa = PBXGroup;
 			children = (
 				5B900D741C273B1F003EB582 /* Main.storyboard */,
@@ -262,24 +262,27 @@
 				5B900D7C1C273B1F003EB582 /* Info.plist */,
 				5B5F608D1C56E96A008E85A0 /* Pluto-Bridging-Header.h */,
 			);
+			name = "Sports Game Finder";
 			path = Pluto;
 			sourceTree = "<group>";
 		};
-		5B900D841C273B1F003EB582 /* PlutoTests */ = {
+		5B900D841C273B1F003EB582 /* SportsGameFinderTests */ = {
 			isa = PBXGroup;
 			children = (
 				5B900D851C273B1F003EB582 /* PlutoTests.swift */,
 				5B900D871C273B1F003EB582 /* Info.plist */,
 			);
+			name = SportsGameFinderTests;
 			path = PlutoTests;
 			sourceTree = "<group>";
 		};
-		5B900D8F1C273B1F003EB582 /* PlutoUITests */ = {
+		5B900D8F1C273B1F003EB582 /* SportsGameFinderUITests */ = {
 			isa = PBXGroup;
 			children = (
 				5B900D901C273B1F003EB582 /* PlutoUITests.swift */,
 				5B900D921C273B1F003EB582 /* Info.plist */,
 			);
+			name = SportsGameFinderUITests;
 			path = PlutoUITests;
 			sourceTree = "<group>";
 		};
@@ -314,11 +317,11 @@
 			name = Games;
 			sourceTree = "<group>";
 		};
-		7B384FA8998F98E63285698B /* Pods */ = {
+		B70C03180A00F8A939533B74 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4FB7BB7DE1A3A02F6A168985 /* Pods-Pluto.debug.xcconfig */,
-				0150F97F62946A589B4EF427 /* Pods-Pluto.release.xcconfig */,
+				B960B9BF1DFD531AAAA08CE8 /* Pods-Pluto.debug.xcconfig */,
+				33288419985C5526E612B432 /* Pods-Pluto.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -326,29 +329,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5B900D6C1C273B1F003EB582 /* Pluto */ = {
+		5B900D6C1C273B1F003EB582 /* Sports Game Finder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B900D951C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Pluto" */;
+			buildConfigurationList = 5B900D951C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Sports Game Finder" */;
 			buildPhases = (
-				0DB0B10BD19D639747C5CAE1 /* Check Pods Manifest.lock */,
+				BF8F02B0A89491A5E5EBD031 /* Check Pods Manifest.lock */,
 				5B900D691C273B1F003EB582 /* Sources */,
 				5B900D6A1C273B1F003EB582 /* Frameworks */,
 				5B900D6B1C273B1F003EB582 /* Resources */,
-				2F844AC6DD1CA156237194EE /* Copy Pods Resources */,
-				4F6B4B116AD5C7CEEACED5A4 /* Embed Pods Frameworks */,
+				1661D3DAAE57816AFF351A84 /* Embed Pods Frameworks */,
+				5A85EC91C58734174A9C39F8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Pluto;
+			name = "Sports Game Finder";
 			productName = Pluto;
-			productReference = 5B900D6D1C273B1F003EB582 /* Pluto.app */;
+			productReference = 5B900D6D1C273B1F003EB582 /* Sports Game Finder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5B900D801C273B1F003EB582 /* PlutoTests */ = {
+		5B900D801C273B1F003EB582 /* Sports Game FinderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B900D981C273B1F003EB582 /* Build configuration list for PBXNativeTarget "PlutoTests" */;
+			buildConfigurationList = 5B900D981C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Sports Game FinderTests" */;
 			buildPhases = (
 				5B900D7D1C273B1F003EB582 /* Sources */,
 				5B900D7E1C273B1F003EB582 /* Frameworks */,
@@ -359,14 +362,14 @@
 			dependencies = (
 				5B900D831C273B1F003EB582 /* PBXTargetDependency */,
 			);
-			name = PlutoTests;
+			name = "Sports Game FinderTests";
 			productName = PlutoTests;
-			productReference = 5B900D811C273B1F003EB582 /* PlutoTests.xctest */;
+			productReference = 5B900D811C273B1F003EB582 /* Sports Game Finder.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5B900D8B1C273B1F003EB582 /* PlutoUITests */ = {
+		5B900D8B1C273B1F003EB582 /* Sports Game FinderUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B900D9B1C273B1F003EB582 /* Build configuration list for PBXNativeTarget "PlutoUITests" */;
+			buildConfigurationList = 5B900D9B1C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Sports Game FinderUITests" */;
 			buildPhases = (
 				5B900D881C273B1F003EB582 /* Sources */,
 				5B900D891C273B1F003EB582 /* Frameworks */,
@@ -377,9 +380,9 @@
 			dependencies = (
 				5B900D8E1C273B1F003EB582 /* PBXTargetDependency */,
 			);
-			name = PlutoUITests;
+			name = "Sports Game FinderUITests";
 			productName = PlutoUITests;
-			productReference = 5B900D8C1C273B1F003EB582 /* PlutoUITests.xctest */;
+			productReference = 5B900D8C1C273B1F003EB582 /* Sports Game Finder.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -408,7 +411,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5B900D681C273B1F003EB582 /* Build configuration list for PBXProject "Pluto" */;
+			buildConfigurationList = 5B900D681C273B1F003EB582 /* Build configuration list for PBXProject "Sports Game Finder" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -421,9 +424,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B900D6C1C273B1F003EB582 /* Pluto */,
-				5B900D801C273B1F003EB582 /* PlutoTests */,
-				5B900D8B1C273B1F003EB582 /* PlutoUITests */,
+				5B900D6C1C273B1F003EB582 /* Sports Game Finder */,
+				5B900D801C273B1F003EB582 /* Sports Game FinderTests */,
+				5B900D8B1C273B1F003EB582 /* Sports Game FinderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -456,37 +459,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DB0B10BD19D639747C5CAE1 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2F844AC6DD1CA156237194EE /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "";
-			showEnvVarsInLog = 0;
-		};
-		4F6B4B116AD5C7CEEACED5A4 /* Embed Pods Frameworks */ = {
+		1661D3DAAE57816AFF351A84 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -499,6 +472,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pluto/Pods-Pluto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A85EC91C58734174A9C39F8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pluto/Pods-Pluto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF8F02B0A89491A5E5EBD031 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -564,12 +567,12 @@
 /* Begin PBXTargetDependency section */
 		5B900D831C273B1F003EB582 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5B900D6C1C273B1F003EB582 /* Pluto */;
+			target = 5B900D6C1C273B1F003EB582 /* Sports Game Finder */;
 			targetProxy = 5B900D821C273B1F003EB582 /* PBXContainerItemProxy */;
 		};
 		5B900D8E1C273B1F003EB582 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5B900D6C1C273B1F003EB582 /* Pluto */;
+			target = 5B900D6C1C273B1F003EB582 /* Sports Game Finder */;
 			targetProxy = 5B900D8D1C273B1F003EB582 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -682,7 +685,7 @@
 		};
 		5B900D961C273B1F003EB582 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FB7BB7DE1A3A02F6A168985 /* Pods-Pluto.debug.xcconfig */;
+			baseConfigurationReference = B960B9BF1DFD531AAAA08CE8 /* Pods-Pluto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -691,7 +694,7 @@
 				INFOPLIST_FILE = Pluto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.Tunisi.SportsGameFinder2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sports Game Finder";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pluto/Pluto-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -699,7 +702,7 @@
 		};
 		5B900D971C273B1F003EB582 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0150F97F62946A589B4EF427 /* Pods-Pluto.release.xcconfig */;
+			baseConfigurationReference = 33288419985C5526E612B432 /* Pods-Pluto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -708,7 +711,7 @@
 				INFOPLIST_FILE = Pluto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.Tunisi.SportsGameFinder2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sports Game Finder";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pluto/Pluto-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -721,8 +724,8 @@
 				INFOPLIST_FILE = PlutoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.PlutoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pluto.app/Pluto";
+				PRODUCT_NAME = "Sports Game Finder";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sports Game Finder.app/Sports Game Finder";
 			};
 			name = Debug;
 		};
@@ -733,8 +736,8 @@
 				INFOPLIST_FILE = PlutoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.PlutoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pluto.app/Pluto";
+				PRODUCT_NAME = "Sports Game Finder";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sports Game Finder.app/Sports Game Finder";
 			};
 			name = Release;
 		};
@@ -744,7 +747,7 @@
 				INFOPLIST_FILE = PlutoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.PlutoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sports Game Finder";
 				TEST_TARGET_NAME = Pluto;
 				USES_XCTRUNNER = YES;
 			};
@@ -756,7 +759,7 @@
 				INFOPLIST_FILE = PlutoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.gvsu.PlutoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sports Game Finder";
 				TEST_TARGET_NAME = Pluto;
 				USES_XCTRUNNER = YES;
 			};
@@ -765,7 +768,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B900D681C273B1F003EB582 /* Build configuration list for PBXProject "Pluto" */ = {
+		5B900D681C273B1F003EB582 /* Build configuration list for PBXProject "Sports Game Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B900D931C273B1F003EB582 /* Debug */,
@@ -774,7 +777,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B900D951C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Pluto" */ = {
+		5B900D951C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Sports Game Finder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B900D961C273B1F003EB582 /* Debug */,
@@ -783,7 +786,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B900D981C273B1F003EB582 /* Build configuration list for PBXNativeTarget "PlutoTests" */ = {
+		5B900D981C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Sports Game FinderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B900D991C273B1F003EB582 /* Debug */,
@@ -792,7 +795,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B900D9B1C273B1F003EB582 /* Build configuration list for PBXNativeTarget "PlutoUITests" */ = {
+		5B900D9B1C273B1F003EB582 /* Build configuration list for PBXNativeTarget "Sports Game FinderUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B900D9C1C273B1F003EB582 /* Debug */,

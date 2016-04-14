@@ -28,7 +28,7 @@ class ViewNearbyGamesViewController: UIViewController, UITableViewDataSource, UI
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return isEmpty ? 2 : games.count
+        return isEmpty ? 1 : games.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -45,9 +45,9 @@ class ViewNearbyGamesViewController: UIViewController, UITableViewDataSource, UI
         } else {
             switch indexPath.row {
             case 0: cell.textLabel?.text = "There are no games nearby"
-            default: cell.textLabel?.text = "Try enabling location services for this app"
+                cell.detailTextLabel?.text = nil
+            default: cell.detailTextLabel?.text = nil
             }
-            cell.detailTextLabel?.text = nil
         }
         
         return cell

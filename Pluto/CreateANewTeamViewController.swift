@@ -20,6 +20,9 @@ class CreateANewTeamViewController: UIViewController, UITableViewDataSource, UIT
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
@@ -63,6 +66,7 @@ class CreateANewTeamViewController: UIViewController, UITableViewDataSource, UIT
     
     @IBAction func submitButtonClicked(sender: AnyObject) {
         self.teamModel.persist(self.nameTextField.text!, friends: friends, parent: self)
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
 }

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UHI-n7-ZpV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UHI-n7-ZpV">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
         <scene sceneID="Og5-xk-eOV">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" title="Pluto" id="ccG-cQ-lsY" userLabel="Home" customClass="HomeViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title="Sports Game Finder" id="ccG-cQ-lsY" userLabel="Home" customClass="HomeViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iEX-4c-JtR"/>
                         <viewControllerLayoutGuide type="bottom" id="DZg-WL-GOp"/>
@@ -78,7 +78,7 @@
         <!--Legal-->
         <scene sceneID="hia-al-4hs">
             <objects>
-                <viewController title="Legal" id="j41-7J-I6m" customClass="LegalViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Legal" id="j41-7J-I6m" customClass="LegalViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LwX-pG-vUU"/>
                         <viewControllerLayoutGuide type="bottom" id="jCA-NJ-5hn"/>
@@ -111,7 +111,7 @@
         <!--Settings-->
         <scene sceneID="bDM-24-I1o">
             <objects>
-                <viewController id="PYF-mR-g0G" customClass="SettingsViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PYF-mR-g0G" customClass="SettingsViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qdd-rD-OTt"/>
                         <viewControllerLayoutGuide type="bottom" id="dVd-H8-dSg"/>
@@ -200,7 +200,7 @@
         <!--My Games-->
         <scene sceneID="X0d-Zt-MW0">
             <objects>
-                <viewController id="MGr-Rg-H96" customClass="GamesContainerViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MGr-Rg-H96" customClass="GamesContainerViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Kc-LE-ycB"/>
                         <viewControllerLayoutGuide type="bottom" id="myJ-aj-WoR"/>
@@ -337,7 +337,7 @@
         <!--PostA Game View Controller-->
         <scene sceneID="gec-sL-qHc">
             <objects>
-                <viewController id="Tel-6P-0XC" customClass="PostAGameViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tel-6P-0XC" customClass="PostAGameViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CDi-6m-9BA"/>
                         <viewControllerLayoutGuide type="bottom" id="bMJ-vX-b6n"/>
@@ -449,7 +449,7 @@
         <!--My Teams-->
         <scene sceneID="CID-I6-34n">
             <objects>
-                <viewController storyboardIdentifier="TeamsContainerViewController" id="XSO-QA-P7t" customClass="TeamsContainerViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TeamsContainerViewController" id="XSO-QA-P7t" customClass="TeamsContainerViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f0F-KU-FpG"/>
                         <viewControllerLayoutGuide type="bottom" id="OIH-79-tJA"/>
@@ -458,48 +458,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="22I-1R-32L">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="375"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="createANewTeamCell" id="s5a-rD-Pq1">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s5a-rD-Pq1" id="LpC-b5-Zhy">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjt-G2-gi1">
-                                                    <rect key="frame" x="8" y="7" width="149" height="30"/>
-                                                    <state key="normal" title="+ Create A New Team"/>
-                                                    <connections>
-                                                        <segue destination="toi-FG-rQT" kind="show" identifier="createATeamSegue" id="ADv-Ya-mUN"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Kjt-G2-gi1" firstAttribute="centerY" secondItem="LpC-b5-Zhy" secondAttribute="centerY" id="3Mv-XI-xzf"/>
-                                                <constraint firstItem="Kjt-G2-gi1" firstAttribute="leading" secondItem="LpC-b5-Zhy" secondAttribute="leadingMargin" id="sU0-OT-5rV"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="teamCell" id="JIv-ys-VK5">
-                                        <rect key="frame" x="0.0" y="136" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JIv-ys-VK5" id="WSe-sf-s6g">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="m4Q-b1-Yyy" kind="show" identifier="teamSegue" id="ZaM-1e-YmB"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="XSO-QA-P7t" id="0aP-CA-fKf"/>
-                                    <outlet property="delegate" destination="XSO-QA-P7t" id="IXg-78-qf2"/>
-                                </connections>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invites:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXd-z4-GeF">
                                 <rect key="frame" x="20" y="383" width="55" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -510,10 +468,10 @@
                                 <rect key="frame" x="0.0" y="412" width="600" height="139"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="139" id="AxG-w0-T3c"/>
+                                    <constraint firstAttribute="height" constant="139" id="TBi-Md-bBG"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="inviteCell" rowHeight="63" id="e21-rS-FoE" customClass="InviteCell" customModule="Pluto" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="inviteCell" rowHeight="63" id="e21-rS-FoE" customClass="InviteCell" customModule="Sports_Game_Finder" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e21-rS-FoE" id="OCV-cx-MAx">
@@ -581,18 +539,62 @@
                                     <outlet property="delegate" destination="XSO-QA-P7t" id="8im-aD-TZo"/>
                                 </connections>
                             </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="22I-1R-32L">
+                                <rect key="frame" x="0.0" y="72" width="600" height="303"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="createANewTeamCell" id="s5a-rD-Pq1">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s5a-rD-Pq1" id="LpC-b5-Zhy">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ Create A New Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwm-gj-OTG">
+                                                    <rect key="frame" x="8" y="11" width="167" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dwm-gj-OTG" firstAttribute="centerY" secondItem="LpC-b5-Zhy" secondAttribute="centerY" id="5cS-on-kdD"/>
+                                                <constraint firstItem="dwm-gj-OTG" firstAttribute="leading" secondItem="LpC-b5-Zhy" secondAttribute="leadingMargin" id="9vM-rP-TcW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="toi-FG-rQT" kind="show" identifier="createATeamSegue" id="gdy-Ya-RJT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="teamCell" id="JIv-ys-VK5">
+                                        <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JIv-ys-VK5" id="WSe-sf-s6g">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="m4Q-b1-Yyy" kind="show" identifier="teamSegue" id="ZaM-1e-YmB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="XSO-QA-P7t" id="0aP-CA-fKf"/>
+                                    <outlet property="delegate" destination="XSO-QA-P7t" id="IXg-78-qf2"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bax-Uo-IOO" firstAttribute="bottom" secondItem="OIH-79-tJA" secondAttribute="top" id="5bC-jq-Rk0"/>
-                            <constraint firstAttribute="trailing" secondItem="22I-1R-32L" secondAttribute="trailing" id="G9s-zQ-Fy6"/>
-                            <constraint firstItem="22I-1R-32L" firstAttribute="leading" secondItem="XJf-HK-CCS" secondAttribute="leading" id="Grw-rG-1yj"/>
-                            <constraint firstItem="Bax-Uo-IOO" firstAttribute="trailing" secondItem="22I-1R-32L" secondAttribute="trailing" id="JIM-uh-Bph"/>
-                            <constraint firstItem="lXd-z4-GeF" firstAttribute="top" secondItem="22I-1R-32L" secondAttribute="bottom" constant="8" symbolic="YES" id="Jo1-Cw-A1F"/>
-                            <constraint firstItem="22I-1R-32L" firstAttribute="leading" secondItem="Bax-Uo-IOO" secondAttribute="leading" id="LUR-RN-tax"/>
-                            <constraint firstItem="22I-1R-32L" firstAttribute="top" secondItem="XJf-HK-CCS" secondAttribute="top" id="M4w-XV-jNz"/>
-                            <constraint firstItem="lXd-z4-GeF" firstAttribute="leading" secondItem="XJf-HK-CCS" secondAttribute="leadingMargin" id="Q2s-YM-0ho"/>
-                            <constraint firstItem="Bax-Uo-IOO" firstAttribute="top" secondItem="lXd-z4-GeF" secondAttribute="bottom" constant="8" symbolic="YES" id="uWj-GR-hdc"/>
+                            <constraint firstItem="Bax-Uo-IOO" firstAttribute="top" secondItem="lXd-z4-GeF" secondAttribute="bottom" constant="8" symbolic="YES" id="30L-ae-WbA"/>
+                            <constraint firstItem="22I-1R-32L" firstAttribute="top" secondItem="f0F-KU-FpG" secondAttribute="bottom" constant="8" symbolic="YES" id="4tp-0E-g4b"/>
+                            <constraint firstItem="Bax-Uo-IOO" firstAttribute="bottom" secondItem="OIH-79-tJA" secondAttribute="top" id="C07-NK-aia"/>
+                            <constraint firstItem="22I-1R-32L" firstAttribute="leading" secondItem="XJf-HK-CCS" secondAttribute="leading" id="IsB-XX-aQ5"/>
+                            <constraint firstItem="lXd-z4-GeF" firstAttribute="leading" secondItem="XJf-HK-CCS" secondAttribute="leadingMargin" id="kS3-hv-ROb"/>
+                            <constraint firstItem="22I-1R-32L" firstAttribute="leading" secondItem="Bax-Uo-IOO" secondAttribute="leading" id="rrC-eS-364"/>
+                            <constraint firstItem="lXd-z4-GeF" firstAttribute="top" secondItem="22I-1R-32L" secondAttribute="bottom" constant="8" symbolic="YES" id="sQN-Tr-EZQ"/>
+                            <constraint firstAttribute="trailing" secondItem="22I-1R-32L" secondAttribute="trailing" id="vMt-E3-KuM"/>
+                            <constraint firstItem="22I-1R-32L" firstAttribute="trailing" secondItem="Bax-Uo-IOO" secondAttribute="trailing" id="yaP-Pb-FRJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Teams" id="yhE-T2-Im4"/>
@@ -608,7 +610,7 @@
         <!--View Nearby Games View Controller-->
         <scene sceneID="mAp-4q-AV2">
             <objects>
-                <viewController id="Ow7-9M-40d" customClass="ViewNearbyGamesViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ow7-9M-40d" customClass="ViewNearbyGamesViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o3F-U7-era"/>
                         <viewControllerLayoutGuide type="bottom" id="HPs-oe-6za"/>
@@ -694,7 +696,7 @@
         <!--Create A Team-->
         <scene sceneID="c8l-Sz-9Hm">
             <objects>
-                <viewController id="toi-FG-rQT" customClass="CreateANewTeamViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="toi-FG-rQT" customClass="CreateANewTeamViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V4g-py-52T"/>
                         <viewControllerLayoutGuide type="bottom" id="dLn-bN-dEc"/>
@@ -813,7 +815,7 @@
         <!--Team View Controller-->
         <scene sceneID="bAO-UA-SWd">
             <objects>
-                <viewController id="m4Q-b1-Yyy" customClass="TeamViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m4Q-b1-Yyy" customClass="TeamViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nTG-29-4Uk"/>
                         <viewControllerLayoutGuide type="bottom" id="eBv-R7-l2U"/>
@@ -848,7 +850,7 @@
         <!--Game-->
         <scene sceneID="pJE-2i-epZ">
             <objects>
-                <viewController storyboardIdentifier="GameViewController" id="6hB-Yt-Lm9" customClass="GameViewController" customModule="Pluto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="6hB-Yt-Lm9" customClass="GameViewController" customModule="Sports_Game_Finder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e7h-Ne-6pN"/>
                         <viewControllerLayoutGuide type="bottom" id="dgx-co-SXv"/>
